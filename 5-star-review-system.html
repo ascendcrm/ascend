@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>5-Star Review System — Ascend CRM</title>
+<link rel="icon" type="image/png" href="/assets/ascend-logo.png">
+<link rel="apple-touch-icon" href="/assets/ascend-logo.png">
+<meta name="description" content="Turn every completed job into new 5-star reviews so you outrank competitors on Google.">
+<link rel="canonical" href="https://www.ascendcrm.io/5-star-review-system">
+<meta property="og:url" content="https://www.ascendcrm.io/5-star-review-system">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend CRM">
+<meta property="og:title" content="5-Star Review System — Ascend CRM">
+<meta property="og:description" content="Turn every completed job into new 5-star reviews so you outrank competitors on Google.">
+<meta property="og:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta property="og:image:width" content="1680">
+<meta property="og:image:height" content="945">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5-Star Review System — Ascend CRM">
+<meta name="twitter:description" content="Turn every completed job into new 5-star reviews so you outrank competitors on Google.">
+<meta name="twitter:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background-color:#07082E; background-image: radial-gradient(circle at 12% 0%, rgba(0,229,204,0.12), transparent 42%), radial-gradient(circle at 88% 6%, rgba(74,129,229,0.14), transparent 40%); background-attachment:fixed; font-family:'Plus Jakarta Sans',sans-serif; color:#F3F1F2; }
+  a { color:#00E5CC; text-decoration:none; }
+  a:hover { color:#8FFFE6; }
+  @keyframes glowPulse { 0%,100% { opacity:0.55; } 50% { opacity:1; } }
+  /* om-responsive-pad */
+  @media (max-width: 720px) {
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+    header > div { padding-left: 20px !important; padding-right: 20px !important; }
+    footer { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(24px, 6.4vw, 32px) !important; line-height: 1.18 !important; }
+  }
+  @media (max-width: 480px) {
+    section { padding-left: 16px !important; padding-right: 16px !important; }
+  }
+  /* om-grid-4 */
+  .om-grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .om-grid-5 { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+  @media (max-width: 1100px) {
+    .om-grid-4 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+    .om-grid-5 { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+    .om-foot-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:28px !important; }
+  }
+  @media (max-width: 560px) {
+    .om-grid-4, .om-grid-5, .om-foot-grid { grid-template-columns:1fr !important; }
+  }
+  /* om-mobile */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg, iframe, video { max-width: 100%; }
+  @media (max-width: 900px) {
+    /* nav: let it breathe instead of cramming one row */
+    header > div { flex-wrap: wrap !important; row-gap: 12px !important; padding-top: 12px !important; padding-bottom: 12px !important; }
+    header > div > a:last-child { font-size: 13px !important; padding: 10px 16px !important; }
+  }
+  @media (max-width: 720px) {
+    /* nothing inside a flex/grid track may demand more room than the phone has */
+    [style*="min-width:300px"], [style*="min-width:320px"], [style*="min-width:340px"],
+    [style*="min-width:290px"], [style*="min-width:280px"], [style*="min-width: 300px"] {
+      min-width: 0 !important;
+    }
+    [style*="grid-template-columns:repeat(auto-fit,minmax(3"],
+    [style*="grid-template-columns:repeat(auto-fit,minmax(2"] {
+      grid-template-columns: 1fr !important;
+    }
+    [style*="max-width:400px"], [style*="max-width:520px"], [style*="max-width:540px"] { max-width: 100% !important; }
+    /* stacked columns get consistent vertical rhythm */
+    section > div[style*="display:flex"][style*="flex-wrap"] { gap: 28px !important; }
+    /* big display type */
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(23px, 6.2vw, 32px) !important; line-height: 1.2 !important; }
+    h3 { font-size: clamp(16px, 4.4vw, 20px) !important; }
+    /* comfortable body copy + tap targets */
+    p { font-size: 15px !important; }
+    a[style*="border-radius:999px"] { display: inline-block; min-height: 48px; line-height: 1.4; box-sizing: border-box; }
+    /* rounded cards feel tighter on a phone */
+    [style*="padding:56px 40px"] { padding: 32px 22px !important; }
+    [style*="padding:36px 28px"], [style*="padding:34px 28px"], [style*="padding:32px 26px"] { padding: 24px 18px !important; }
+    [style*="border-radius:22px"] { border-radius: 16px !important; }
+  }
+  @media (max-width: 480px) {
+    header nav { gap: 14px !important; }
+    [style*="padding:32px"] { padding: 22px !important; }
+    [style*="padding:30px"], [style*="padding:28px"], [style*="padding:26px"] { padding: 20px !important; }
+    a[style*="font-size:16px"][style*="border-radius:999px"] { width: 100%; text-align: center; }
+  }
+  /* om-nav */
+  .om-burger { display:none; }
+  @media (max-width: 900px) {
+    header nav.om-desk-nav { display:none !important; }
+    .om-desk-cta { display:none !important; }
+    .om-burger { display:flex !important; }
+    header > div { flex-wrap:nowrap !important; justify-content:space-between !important; }
+  }
+  @media (min-width: 901px) {
+    .om-mobile-panel { display:none !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+<header style="position:sticky;top:0;z-index:100;background:rgba(7,8,46,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.12);">
+  <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;">
+      <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:32px;width:auto;flex:none;">
+    </a>
+    <nav class="om-desk-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;">
+      <a href="/" style="color:#F3F1F2;font-weight:600;font-size:15px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:600;font-size:15px;">About</a>
+      <div style="position:relative;">
+        <button onClick="{{ toggleServices }}" style="background:none;border:none;font-family:'Plus Jakarta Sans',sans-serif;color:#00E5CC;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;">
+          Services <span style="font-size:11px;transform:translateY(1px);">▾</span>
+        </button>
+        <sc-if value="{{ servicesOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:32px;left:0;z-index:120;background:#0D0E4A;border:1px solid rgba(255,255,255,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,0.55);padding:8px;min-width:230px;display:flex;flex-direction:column;gap:2px;">
+            <a href="/services" style="color:#F3F1F2;font-weight:600;font-size:14px;padding:8px 10px;border-radius:8px;">All Services</a>
+            <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Database Reactivation System</a>
+            <a href="/5-star-review-system" style="color:#00E5CC;font-weight:700;font-size:14px;padding:8px 10px;border-radius:8px;">5-Star Review System</a>
+            <a href="/ai-employee" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">24/7 AI Employee</a>
+            <a href="/automated-referral-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Automated Referral System</a>
+            <a href="/meta-ads" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Meta Ads</a>
+            <a href="/full-crm-service" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Full CRM Service</a>
+          </div>
+        </sc-if>
+      </div>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:600;font-size:15px;">Contact</a>
+    </nav>
+    <button class="om-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;">
+      <span style="display:flex;flex-direction:column;gap:4px;width:18px;">
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+      </span>
+    </button>
+
+    <a class="om-desk-cta" href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:12px 20px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,229,204,0.35);">Book Your Free Strategy Call</a>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="om-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.12);background:#0D0E4A;padding:18px 20px 24px;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;">
+      <a href="/" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">About</a>
+      <div style="color:#00E5CC;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:16px 12px 8px;">SERVICES</div>
+      <a href="/services" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">All Services</a>
+      <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Database Reactivation System</a>
+      <a href="/5-star-review-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">5-Star Review System</a>
+      <a href="/ai-employee" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">24/7 AI Employee</a>
+      <a href="/automated-referral-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Automated Referral System</a>
+      <a href="/meta-ads" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Meta Ads</a>
+      <a href="/full-crm-service" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Full CRM Service</a>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;margin-top:8px;">Contact</a>
+      <a href="/book-strategy-call" style="margin-top:14px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:800;font-size:15px;padding:16px 20px;border-radius:12px;text-align:center;box-shadow:0 8px 22px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+    </div>
+  </sc-if>
+</header>
+
+<section style="width:100%;box-sizing:border-box;max-width:900px;margin:0 auto;padding:64px 32px 20px;text-align:center;">
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);color:#8FFFE6;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;margin-bottom:22px;">5-STAR REVIEW SYSTEM</div>
+  <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.2;font-weight:800;margin:0 0 24px;letter-spacing:-0.01em;">Build a Reputation That Attracts More Customers — <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Automatically</span></h1>
+  <p style="color:#C8C7DC;font-size:16px;line-height:1.6;margin:0 0 10px;">Your reputation determines who customers choose — long before you ever speak to them.</p>
+  <p style="color:#C8C7DC;font-size:16px;line-height:1.6;margin:0 0 28px;">The 5-Star Review System helps your business collect a steady flow of 5-star reviews, strengthen trust, and stand out on Google… all without adding anything to your workload.</p>
+
+  <div style="position:relative;border-radius:18px;padding:2px;background:linear-gradient(135deg,#00E5CC,#4A81E5,#00E5CC);box-shadow:0 20px 50px rgba(0,229,204,0.25);margin-bottom:28px;">
+    <div style="position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;">
+      <iframe src="https://player.vimeo.com/video/1144525028" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  <p style="color:#F3F1F2;font-size:16px;line-height:1.7;font-weight:700;margin:0 0 28px;">This is how local businesses increase visibility, boost credibility, and convert more customers consistently.</p>
+
+  <div style="border:1px solid rgba(0,229,204,0.3);border-radius:14px;padding:24px 28px;margin-bottom:28px;background:rgba(255,255,255,0.03);">
+    <p style="font-size:17px;line-height:1.5;color:#F3F1F2;font-weight:700;margin:0 0 8px;">Ready to Strengthen Your Reputation and Become the Obvious Choice in Your Market?</p>
+    <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Book a free strategy call and we'll show you exactly where your current reputation is helping — and where it's holding you back.</p>
+  </div>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;padding:15px 28px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+  <div style="flex:1 1 420px;min-width:300px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">A DONE-FOR-YOU 5-STAR REVIEW ENGINE</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 18px;">A Done-For-You System That Builds a Steady Flow of 5-Star Reviews</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">Your reputation is one of your most valuable business assets — and it has a direct impact on how many customers choose you over a competitor. But collecting reviews consistently takes time, follow-up, and a process most busy businesses simply don't have.</p>
+    <p style="color:#F3F1F2;font-size:15px;line-height:1.7;font-weight:700;margin:0 0 14px;">That's where the 5-Star Review System comes in.</p>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">This is a fully done-for-you system that automatically requests, collects, and publishes reviews from your customers — without you or your team needing to remember, chase, or manually follow up.</p>
+    <h3 style="font-size:15px;font-weight:700;margin:20px 0 12px;">Here's what it can do for you:</h3>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Send automated review requests at the perfect moment</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Follow up with friendly reminders without adding more work</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Guide customers straight to your review platforms</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Build consistent social proof across key channels</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Increase trust, credibility, and visibility</p>
+    </div>
+    <a href="/book-strategy-call" style="display:inline-block;margin-top:20px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:13px 24px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+  <div style="flex:1 1 320px;min-width:280px;">
+    <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(0,229,204,0.22);box-shadow:0 20px 50px rgba(0,0,0,0.35);">
+      <img src="/assets/google-reviews-search.png" alt="Homeowner comparing contractors by Google review ratings" style="width:100%;display:block;">
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;">
+    <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE HIDDEN REVENUE LOST TO WEAK REVIEWS</div>
+    <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 20px;">Customers Decide Long Before They Contact You — Your Reputation Makes the First Impression</h2>
+    <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 24px;">Customers compare you with everyone else in your area — and they almost always choose the business with more recent, consistent, and higher-rated reviews. Even if your service is exceptional, if your reviews don't reflect that, you're losing customers you should be winning.</p>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:14px;">
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">People Choose Competitors With More Reviews</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">When two businesses look similar, customers pick the one with the stronger online presence — even if you deliver a better service.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Old Reviews Signal "Stale" or Inactive Business</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A review from last week builds trust. A review from last year raises questions.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Happy Customers Rarely Leave Reviews on Their Own</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Without a consistent request system, your reputation doesn't grow with your business.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">One Negative Review Has Too Much Power</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">When you don't have enough positive ones, a single negative experience can drag down your whole rating.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;">
+    <a href="/book-strategy-call" style="color:#00857A;font-weight:700;font-size:15px;">Want to see how it works? Book your free strategy call →</a>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHY GREAT BUSINESSES OFTEN HAVE AVERAGE REVIEWS</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Your Service Is Excellent — Your Reviews Just Aren't Showing It Yet</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">Reviews don't grow automatically — and when your plate is full, they usually fall behind. Here are the real reasons great businesses often end up with average online reviews:</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">01</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Review Requests Get Missed During Busy Days</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">When you're serving customers and handling day-to-day, asking for reviews isn't top of mind — that's what the system handles.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">02</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Customers Rarely Leave Reviews Without a Reminder</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">A gentle, well-timed request is usually all it takes to turn a positive experience into a public 5-star review.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">03</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Staff Feel Awkward or Forget To Ask</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Our system solves this completely by making the request feel natural, friendly, and consistent.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">04</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">A Few Negative Reviews Stand Out More Than They Should</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">A steady flow of positive reviews restores balance and reflects the real quality of your service.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">05</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Customers Compare You to Competitors With More Reviews</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">People trust what they see online — your reviews need to match your real-world quality.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">06</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">No Automated System Asking After Jobs</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Without a system, requests are inconsistent — leading to long gaps that make your business appear less active.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHAT WE BUILD SPECIFICALLY FOR YOU</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">A Fully Installed, Done-For-You System That Collects 5-Star Reviews Automatically</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">No tech setup. No writing. No follow-up. Just a fully installed review engine running quietly in the background.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #00E5CC;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Automated Review Request Workflow</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Requests go out right after the job or appointment is completed — every customer gets one, right on time.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #4A81E5;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Friendly SMS & Email Reminders</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">If the first message gets missed, gentle follow-up reminders dramatically increase reviews without feeling pushy.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #6B32BF;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Personalized Message Templates</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Communication that sounds like a real person reaching out — warm, simple, and quick to respond to.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #C9750A;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-2.8 1.17V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 7 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 2.6 15H2.5a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10.5 3V2.5a2 2 0 1 1 4 0v.09A1.65 1.65 0 0 0 16 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09A1.65 1.65 0 0 0 21 10.5h.5a2 2 0 1 1 0 4H21a1.65 1.65 0 0 0-1.6 1z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Full Integration With Your Workflow</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Connected to your booking system or process — every eligible customer gets a request automatically.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #3F8F1F;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="11" width="3.5" height="7" rx="1"/><rect x="10.2" y="6" width="3.5" height="12" rx="1"/><rect x="15.5" y="14" width="3.5" height="4" rx="1"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">A Clean, Simple Dashboard</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">See how many new reviews you're collecting, which platforms are growing, and customer sentiment trends.</p>
+      </div>
+      <div style="background:#EEFCF9;border:1px solid rgba(0,229,204,0.4);border-radius:16px;padding:26px;display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:800;margin:0 0 8px;">Ongoing Optimization</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Timing, messaging, routing — all optimized so your review flow stays strong and consistent over time.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">A Done-For-You Workflow That Turns Happy Customers Into Public Proof</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">Growing your reputation doesn't need to be complicated. Here's how the system works:</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 01</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">A Job or Appointment Is Completed</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">The system recognizes the customer is ready for a review request — the workflow triggers automatically.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 02</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">A Well-Timed Request Is Sent Automatically</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A friendly, personalized message delivered at the ideal moment increases the chance of a positive review.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 03</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Helpful Reminders Follow</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">If there's no response, gentle reminders encourage action without pressure — dramatically increasing volume.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 04</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Customers Move Straight to Your Review Platforms</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Guided directly to your Google profile or platform of choice — simple, fast, and friction-free.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;grid-column:span 1;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Your Reputation Grows Every Week</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">More recent reviews, more 5-star ratings, stronger trust, and higher local search visibility — automatically.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">HOW YOUR REPUTATION SHIFTS</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">What Businesses Commonly Experience Once the System Is Activated</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A Steady Increase in New Reviews</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Instead of occasional reviews, you get a steady flow of feedback that compounds over time.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">More Recent Reviews</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Regular new reviews create an immediate sense of trust and relevance for prospects.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A Reputation That Matches Reality</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Your online presence finally mirrors the great experience you're actually delivering.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Increased Local Search Visibility</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Platforms reward consistent, authentic review activity with more prominent placement.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Stronger Trust From New Customers</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Recent, positive reviews shorten the decision-making process for people comparing options.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Better Marketing Performance</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A strong reputation lifts your ads, content, and referrals — conversion rates rise across the board.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE PSYCHOLOGY BEHIND WHY THIS WORKS</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">It's Not Lack of Interest — It's Lack of a System That Fits Naturally</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">People respond when the timing is right, the request is simple, and the effort is low.</p>
+  </div>
+  <div class="om-grid-5" style="">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">People Take Action When It's Easy</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Removing unnecessary steps means more customers follow through.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #4A81E5;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Timing Is Everything</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Requests sent right after a positive experience tap into the strongest window of intent.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #6B32BF;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Reminders Work Because People Forget</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A gentle reminder reignites intention and turns it into action, without pressure.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #C9750A;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Consistency Builds Trust</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Search platforms reward businesses that maintain consistent engagement.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">People Trust What Others Recently Experienced</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Fresh feedback reduces uncertainty and helps prospects decide faster.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Does Your Business Rely on Trust and First Impressions?</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">If customers research you before they ever call, your reputation becomes one of your most powerful assets.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Service Businesses in Crowded Local Markets</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">Consistent, authentic reviews help your business stand out instantly and build trust at first glance.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">HVAC • Plumbing • Electrical • Roofing • Landscaping • Pest Control • Pool Builders • Tree Services • Remodelers • Cleaning</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Appointment-Based Businesses Where Credibility Drives Bookings</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">A steady flow of recent reviews helps you look professional, dependable, and trustworthy.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Med Spas • Chiropractors • Hair Salons • Gyms • Yoga Studios • Personal Trainers • Weight Loss Clinics</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Local Professionals Who Depend on Visibility</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">Consistent reviews make your marketing more effective and reinforce trust for customers to move forward.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Real Estate • Mortgage Brokers • Accountants • Insurance Advisors • Property Managers • Car Dealerships • Restaurants • Solar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 40px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHY TIMING MATTERS</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Your Reputation Is Already Influencing Decisions</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">Customers aren't comparing pricing sheets — they're comparing trust, based on what they see right now.</p>
+  </div>
+  <div class="om-grid-5" style="gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">01</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Customers Look at Recent Reviews First</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">If your most recent reviews are months old, new customers don't feel confident.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">02</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Competitors Are Actively Growing Their Reviews</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Stronger reputations accumulate momentum over time — acting now evens the playing field.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">03</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Search Platforms Reward Active Businesses</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Every new review supports your visibility, ranking, and chance of being chosen.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">04</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Every Customer Without a Request Is a Missed Opportunity</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Starting now ensures you capture more of the goodwill you're already earning.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(0,229,204,0.35);border-left:3px solid #00E5CC;border-radius:0;padding:24px 0 24px 18px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">05</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Reputation Strengthens Everything Else</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">The earlier you start, the sooner you'll see improvements across all your customer-facing efforts.</p>
+    </div>
+  </div>
+  <div style="max-width:200px;margin:56px auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,204,0.5),transparent);"></div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:48px 32px 80px;text-align:center;">
+  <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;margin:0 0 16px;">Ready to Turn Customer Feedback Into a Competitive Advantage?</h2>
+  <p style="color:#9A99B0;font-size:16px;line-height:1.6;margin:0 0 30px;max-width:560px;margin-left:auto;margin-right:auto;">A quick strategy call is all it takes to identify the biggest opportunities in your business and map out the exact systems that will drive immediate results.</p>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:16px;padding:17px 32px;border-radius:999px;box-shadow:0 12px 32px rgba(0,229,204,0.32);">Book Your Free Strategy Call</a>
+</section>
+
+<footer style="background:#07082E;color:#aeb8c9;padding:56px 32px 28px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.06);">
+  <div class="om-foot-grid" style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:28px;width:auto;">
+      </div>
+      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for local service businesses — built by Joshua Munoz.</p>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Contact Info</div>
+      <div style="font-size:14px;line-height:2;">hello@ascendcrm.io<br>+1 978-857-4349</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Quick Links</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/" style="color:#aeb8c9;">Home</a>
+        <a href="/about" style="color:#aeb8c9;">About</a>
+        <a href="/services" style="color:#aeb8c9;">Services</a>
+        <a href="/contact" style="color:#aeb8c9;">Contact</a>
+        <a href="/book-strategy-call" style="color:#aeb8c9;">Free Strategy Call</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Services</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/database-reactivation-system" style="color:#aeb8c9;">Database Reactivation System</a>
+        <a href="/5-star-review-system" style="color:#aeb8c9;">5-Star Review System</a>
+        <a href="/ai-employee" style="color:#aeb8c9;">24/7 AI Employee</a>
+        <a href="/automated-referral-system" style="color:#aeb8c9;">Automated Referral System</a>
+        <a href="/meta-ads" style="color:#aeb8c9;">Meta Ads</a>
+        <a href="/full-crm-service" style="color:#aeb8c9;">Full CRM Service</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;font-size:13px;color:#6d7688;">© 2026 Ascend CRM. All rights reserved.</div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { servicesOpen: false, menuOpen: false };
+  toggleServices = () => this.setState(s => ({ servicesOpen: !s.servicesOpen }));
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  renderVals() {
+    return { servicesOpen: this.state.servicesOpen, toggleServices: this.toggleServices, menuOpen: this.state.menuOpen, toggleMenu: this.toggleMenu };
+  }
+}
+</script>
+</body>
+</html>

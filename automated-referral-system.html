@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Automated Referral System — Ascend CRM</title>
+<link rel="icon" type="image/png" href="/assets/ascend-logo.png">
+<link rel="apple-touch-icon" href="/assets/ascend-logo.png">
+<meta name="description" content="Turn happy customers into a steady stream of new business, automatically.">
+<link rel="canonical" href="https://www.ascendcrm.io/automated-referral-system">
+<meta property="og:url" content="https://www.ascendcrm.io/automated-referral-system">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend CRM">
+<meta property="og:title" content="Automated Referral System — Ascend CRM">
+<meta property="og:description" content="Turn happy customers into a steady stream of new business, automatically.">
+<meta property="og:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta property="og:image:width" content="1680">
+<meta property="og:image:height" content="945">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automated Referral System — Ascend CRM">
+<meta name="twitter:description" content="Turn happy customers into a steady stream of new business, automatically.">
+<meta name="twitter:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background-color:#07082E; background-image: radial-gradient(circle at 12% 0%, rgba(0,229,204,0.12), transparent 42%), radial-gradient(circle at 88% 6%, rgba(74,129,229,0.14), transparent 40%); background-attachment:fixed; font-family:'Plus Jakarta Sans',sans-serif; color:#F3F1F2; }
+  a { color:#00E5CC; text-decoration:none; }
+  a:hover { color:#8FFFE6; }
+  @keyframes glowPulse { 0%,100% { opacity:0.55; } 50% { opacity:1; } }
+  /* om-responsive-pad */
+  @media (max-width: 720px) {
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+    header > div { padding-left: 20px !important; padding-right: 20px !important; }
+    footer { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(24px, 6.4vw, 32px) !important; line-height: 1.18 !important; }
+  }
+  @media (max-width: 480px) {
+    section { padding-left: 16px !important; padding-right: 16px !important; }
+  }
+  /* om-grid-4 */
+  .om-grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .om-grid-5 { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+  @media (max-width: 1100px) {
+    .om-grid-4 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+    .om-grid-5 { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+    .om-foot-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:28px !important; }
+  }
+  @media (max-width: 560px) {
+    .om-grid-4, .om-grid-5, .om-foot-grid { grid-template-columns:1fr !important; }
+  }
+  /* om-mobile */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg, iframe, video { max-width: 100%; }
+  @media (max-width: 900px) {
+    /* nav: let it breathe instead of cramming one row */
+    header > div { flex-wrap: wrap !important; row-gap: 12px !important; padding-top: 12px !important; padding-bottom: 12px !important; }
+    header > div > a:last-child { font-size: 13px !important; padding: 10px 16px !important; }
+  }
+  @media (max-width: 720px) {
+    /* nothing inside a flex/grid track may demand more room than the phone has */
+    [style*="min-width:300px"], [style*="min-width:320px"], [style*="min-width:340px"],
+    [style*="min-width:290px"], [style*="min-width:280px"], [style*="min-width: 300px"] {
+      min-width: 0 !important;
+    }
+    [style*="grid-template-columns:repeat(auto-fit,minmax(3"],
+    [style*="grid-template-columns:repeat(auto-fit,minmax(2"] {
+      grid-template-columns: 1fr !important;
+    }
+    [style*="max-width:400px"], [style*="max-width:520px"], [style*="max-width:540px"] { max-width: 100% !important; }
+    /* stacked columns get consistent vertical rhythm */
+    section > div[style*="display:flex"][style*="flex-wrap"] { gap: 28px !important; }
+    /* big display type */
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(23px, 6.2vw, 32px) !important; line-height: 1.2 !important; }
+    h3 { font-size: clamp(16px, 4.4vw, 20px) !important; }
+    /* comfortable body copy + tap targets */
+    p { font-size: 15px !important; }
+    a[style*="border-radius:999px"] { display: inline-block; min-height: 48px; line-height: 1.4; box-sizing: border-box; }
+    /* rounded cards feel tighter on a phone */
+    [style*="padding:56px 40px"] { padding: 32px 22px !important; }
+    [style*="padding:36px 28px"], [style*="padding:34px 28px"], [style*="padding:32px 26px"] { padding: 24px 18px !important; }
+    [style*="border-radius:22px"] { border-radius: 16px !important; }
+  }
+  @media (max-width: 480px) {
+    header nav { gap: 14px !important; }
+    [style*="padding:32px"] { padding: 22px !important; }
+    [style*="padding:30px"], [style*="padding:28px"], [style*="padding:26px"] { padding: 20px !important; }
+    a[style*="font-size:16px"][style*="border-radius:999px"] { width: 100%; text-align: center; }
+  }
+  /* om-nav */
+  .om-burger { display:none; }
+  @media (max-width: 900px) {
+    header nav.om-desk-nav { display:none !important; }
+    .om-desk-cta { display:none !important; }
+    .om-burger { display:flex !important; }
+    header > div { flex-wrap:nowrap !important; justify-content:space-between !important; }
+  }
+  @media (min-width: 901px) {
+    .om-mobile-panel { display:none !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+<header style="position:sticky;top:0;z-index:100;background:rgba(7,8,46,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.12);">
+  <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;">
+      <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:32px;width:auto;flex:none;">
+    </a>
+    <nav class="om-desk-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;">
+      <a href="/" style="color:#F3F1F2;font-weight:600;font-size:15px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:600;font-size:15px;">About</a>
+      <div style="position:relative;">
+        <button onClick="{{ toggleServices }}" style="background:none;border:none;font-family:'Plus Jakarta Sans',sans-serif;color:#00E5CC;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;">
+          Services <span style="font-size:11px;transform:translateY(1px);">▾</span>
+        </button>
+        <sc-if value="{{ servicesOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:32px;left:0;z-index:120;background:#0D0E4A;border:1px solid rgba(255,255,255,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,0.55);padding:8px;min-width:230px;display:flex;flex-direction:column;gap:2px;">
+            <a href="/services" style="color:#F3F1F2;font-weight:600;font-size:14px;padding:8px 10px;border-radius:8px;">All Services</a>
+            <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Database Reactivation System</a>
+            <a href="/5-star-review-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">5-Star Review System</a>
+            <a href="/ai-employee" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">24/7 AI Employee</a>
+            <a href="/automated-referral-system" style="color:#00E5CC;font-weight:700;font-size:14px;padding:8px 10px;border-radius:8px;">Automated Referral System</a>
+            <a href="/meta-ads" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Meta Ads</a>
+            <a href="/full-crm-service" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Full CRM Service</a>
+          </div>
+        </sc-if>
+      </div>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:600;font-size:15px;">Contact</a>
+    </nav>
+    <button class="om-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;">
+      <span style="display:flex;flex-direction:column;gap:4px;width:18px;">
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+      </span>
+    </button>
+
+    <a class="om-desk-cta" href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:12px 20px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,229,204,0.35);">Book Your Free Strategy Call</a>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="om-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.12);background:#0D0E4A;padding:18px 20px 24px;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;">
+      <a href="/" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">About</a>
+      <div style="color:#00E5CC;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:16px 12px 8px;">SERVICES</div>
+      <a href="/services" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">All Services</a>
+      <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Database Reactivation System</a>
+      <a href="/5-star-review-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">5-Star Review System</a>
+      <a href="/ai-employee" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">24/7 AI Employee</a>
+      <a href="/automated-referral-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Automated Referral System</a>
+      <a href="/meta-ads" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Meta Ads</a>
+      <a href="/full-crm-service" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Full CRM Service</a>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;margin-top:8px;">Contact</a>
+      <a href="/book-strategy-call" style="margin-top:14px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:800;font-size:15px;padding:16px 20px;border-radius:12px;text-align:center;box-shadow:0 8px 22px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+    </div>
+  </sc-if>
+</header>
+
+<section style="width:100%;box-sizing:border-box;max-width:900px;margin:0 auto;padding:64px 32px 20px;text-align:center;">
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);color:#8FFFE6;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;margin-bottom:22px;">AUTOMATED REFERRAL SYSTEM</div>
+  <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.2;font-weight:800;margin:0 0 24px;letter-spacing:-0.01em;">Turn Happy Customers Into a Steady Stream of New Business — <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Automatically</span></h1>
+  <p style="color:#F3F1F2;font-size:17px;line-height:1.6;font-weight:700;margin:0 0 10px;">Without apps, complicated software, or extra work for your team.</p>
+  <p style="color:#C8C7DC;font-size:16px;line-height:1.6;margin:0 0 28px;">Referrals convert higher, cost less, and bring in customers who trust you before they ever contact you. The Automated Referral System turns your existing audience into your most powerful growth engine.</p>
+
+  <div style="position:relative;border-radius:18px;padding:2px;background:linear-gradient(135deg,#00E5CC,#4A81E5,#00E5CC);box-shadow:0 20px 50px rgba(0,229,204,0.25);margin-bottom:28px;">
+    <div style="position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;">
+      <iframe src="https://player.vimeo.com/video/1144524182" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  <p style="color:#F3F1F2;font-size:16px;line-height:1.7;font-weight:700;margin:0 0 6px;">No apps. No portals. No complicated tracking.</p>
+  <p style="color:#F3F1F2;font-size:16px;line-height:1.7;font-weight:700;margin:0 0 28px;">Just a straightforward system that generates word-of-mouth momentum on autopilot.</p>
+
+  <div style="border:1px solid rgba(0,229,204,0.3);border-radius:14px;padding:24px 28px;margin-bottom:28px;background:rgba(255,255,255,0.03);">
+    <p style="font-size:17px;line-height:1.5;color:#F3F1F2;font-weight:700;margin:0 0 8px;">Ready to Unlock the Referral Potential Already Inside Your Customer Base?</p>
+    <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Book a free strategy call and we'll walk you through exactly how much opportunity is sitting in your audience.</p>
+  </div>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;padding:15px 28px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+  <div style="flex:1 1 420px;min-width:300px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">A SIMPLE, DONE-FOR-YOU REFERRAL ENGINE</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 18px;">Gets Your Customers Talking About You</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">Most businesses want more referrals — but they never get them consistently because there's no system that reminds customers, motivates them, or makes referring effortless. The Automated Referral System fixes that.</p>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">We install a fully automated referral campaign that encourages your happiest customers to share your business with friends and family in exchange for a simple, high-value bonus.</p>
+    <h3 style="font-size:15px;font-weight:700;margin:20px 0 12px;">A straightforward, frictionless process:</h3>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Your customers receive a referral message</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• They share your business with someone they know</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• The new customer calls, mentions who referred them, and books</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Both people get a bonus — and you get a new customer</p>
+    </div>
+    <a href="/book-strategy-call" style="display:inline-block;margin-top:20px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:13px 24px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+  <div style="flex:1 1 320px;min-width:280px;">
+    <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(0,229,204,0.22);box-shadow:0 20px 50px rgba(0,0,0,0.35);">
+      <img src="/assets/referral-neighbors.png" alt="Homeowner recommending a service business to neighbors" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;">
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;">
+    <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">MISSED OPPORTUNITIES HIDDEN INSIDE YOUR CUSTOMER BASE</div>
+    <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 20px;">Your Customers Are Ready to Refer You — They Just Need a Simple Reason</h2>
+    <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 24px;">Your best customers love what you do and would gladly recommend you more often… but without a clear offer and a simple process, it rarely happens.</p>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:14px;">
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Most Customers Forget to Refer — Even When They Want To</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A simple, automated reminder dramatically increases how often your name gets shared.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">No Incentive Means No Urgency</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A clear, appealing bonus makes referring feel easy and exciting.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Referrals Happen Randomly Instead of Consistently</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Automation creates dependable referral activity instead of relying on luck.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Staff Rarely Have Time to Ask</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Automation fills the gap and ensures every customer gets invited to participate.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #3F8F1F;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Customers Want a Simple Process</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">"Call the business and say who referred you" removes friction and makes referring a no-brainer.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Every Happy Customer Is a New Customer You Haven't Met</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">These new customers are high quality — trust is already established.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;">
+    <a href="/book-strategy-call" style="color:#00857A;font-weight:700;font-size:15px;">Want to see how it works? Book your free strategy call →</a>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHAT'S REALLY STOPPING REFERRALS</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Your Customers Love What You Do — They Just Don't Have an Easy Way to Share It</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">Referrals don't slow down because customers aren't happy. Here's what typically holds referrals back:</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">01</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Customers Don't Think to Refer Unless Reminded</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">A well-timed automated nudge brings your business back into their awareness.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">02</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">There's No Immediate Incentive</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">A simple bonus for both sides gives customers a clear reason to share today, not "someday."</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">03</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Your Team Doesn't Have Time to Ask Consistently</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Automation fills the gap so every customer gets the invitation, every time.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">04</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Without a System, Referrals Only Happen Randomly</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">This system turns random moments into predictable, repeatable growth.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">05</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Customers Don't Know What's In It for Them</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your campaign makes the incentive easy to understand, share, and repeat.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">06</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">New Customers Don't Know How to Redeem It</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your system keeps it simple: "Call in and say who sent you," or "Bring a friend."</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHAT WE BUILD FOR YOU</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">A Complete, Done-For-You Referral Engine That Runs Automatically</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">We handle every part — from the messaging to the incentives to the automation.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #00E5CC;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12"/><path d="M12 9S10.5 4.5 8 5.2 9 9 12 9zM12 9s1.5-4.5 4-3.8S15 9 12 9z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Automated Referral Campaign Setup</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">We build and launch campaigns that reach your customers with the perfect message, at the perfect time.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #4A81E5;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12"/><path d="M12 9S10.5 4.5 8 5.2 9 9 12 9zM12 9s1.5-4.5 4-3.8S15 9 12 9z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">High-Value Referral Offer Creation</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A bonus that's attractive, simple to redeem, valuable for both sides, and sustainable for your business.</p>
+      </div>
+      <div style="background:#EEFCF9;border:1px solid rgba(0,229,204,0.4);border-radius:16px;padding:26px;display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:800;margin:0 0 8px;">Custom Referral Messaging</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Announcements, reminders, and follow-ups — all crafted to encourage sharing without being pushy.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">A Simple, Flexible Referral Workflow</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">We build a referral process your customers can follow in seconds. Here's how it works:</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 01</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Customers Receive a Referral Invitation</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A friendly, well-timed message with the offer, bonus, and exactly how to participate.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 02</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">They Share the Referral</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Forwarding a message, telling a friend, or bringing someone directly — whatever's easiest.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 03</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">The New Customer Takes One Simple Action</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Calling in, showing up together, or booking as a pair — intentionally straightforward.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 04</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Both People Receive a Bonus</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">The referrer gets their bonus, the new customer gets theirs — everyone wins.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;grid-column:span 1;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Step 05 — Simple Tracking, No Headaches</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Noting the referrer's name, checking CRM tags, or confirming a pair booking — extremely light for your staff.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE IMPACT OF GIVING CUSTOMERS A SIMPLE REASON TO SHARE</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">What Businesses Commonly Experience Once the System Is Activated</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A Noticeable Increase in Referrals</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Your customers already like and trust you — a friendly invitation is often all it takes.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Higher Engagement From Existing Customers</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A compelling offer sparks replies, conversations, and rebookings.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">New Customers Arriving With Trust Already Built In</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Referred customers are more confident, more ready to book, and easier to serve.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">More Bookings Without Adding to Ad Spend</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Referral-driven customers cost far less to acquire than paid channels.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Increased Return Visits</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Customers who earn a reward naturally return to redeem it, boosting retention.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A More Predictable Flow of Word-of-Mouth</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Automation prompts customers consistently — a growth channel you can count on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE PSYCHOLOGY BEHIND WHY CUSTOMERS REFER</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">People Naturally Share Businesses They Love</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">They just need a clear moment, a simple process, and a reason to act now.</p>
+  </div>
+  <div class="om-grid-5" style="">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Positive Experiences Create a Natural Desire to Share</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">This system gives customers the perfect opportunity while the experience is still fresh.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #4A81E5;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Trust Transfers From the Referrer to the New Customer</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">The new customer arrives already trusting your business.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #6B32BF;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">A Clear Incentive Gives a Reason to Act Now</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A win-win reward shifts sharing from a casual idea to a worthwhile action.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #C9750A;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Automation Keeps the Invitation Top of Mind</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A timely, friendly nudge arrives at the exact moment they're most likely to act.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Simplicity Removes Friction</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Invite → simple action → both get the reward. No apps, no codes, no barriers.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Is Your Customer Base Ready to Fuel Your Next Stage of Growth?</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">Built for businesses that already have satisfied customers and want to turn that satisfaction into measurable results.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Service Businesses With Loyal, Returning Customers</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">If your work creates long-term satisfaction, referrals become one of the most natural ways to grow.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">HVAC • Electricians • Plumbers • Roofing • Landscaping • Pest Control • Tree Service • Pool Builders • Remodelers • Cleaning</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Beauty, Wellness, and Personal Care Providers</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">Clients love sharing services that make them feel good, given a simple excuse to bring someone along.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Med Spas • Hair Salons • Chiropractors • Weight Loss Clinics</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Fitness and Membership-Based Businesses</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">People want to work out and join classes with someone they know — referral bonuses drive that behavior.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Gyms • Yoga Studios • Personal Trainers</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Local Professionals and Experience-Based Businesses</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">When customers trust or enjoy coming to your business, referrals become one of your strongest channels.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Real Estate • Mortgage Brokers • Accountants • Insurance Advisors • Property Managers • Car Dealerships • Restaurants • Cafés</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 40px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHY YOUR REFERRAL GROWTH SHOULD START TODAY</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Businesses Don't Struggle to Deserve Referrals — They Struggle to Activate Them</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">The longer you wait to launch, the more opportunities pass quietly in the background.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">01</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Referrals Don't Accumulate — You Capture or Lose Them</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Launching now ensures conversations turn into new business instead of disappearing.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">02</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Your Customer Base Is Already Warm and Ready</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">You already have people who trust you and are willing to recommend you.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">03</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Referral Customers Convert Faster</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">They trust you before they ever walk through the door.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">04</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Incentives Work Best When Introduced Early</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Starting today gives your system a head start on building momentum.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">05</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Competitors Are Leaning Into Referrals</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Waiting puts you behind — starting now positions you as the business customers share first.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(0,229,204,0.35);border-left:3px solid #00E5CC;border-radius:0;padding:24px 0 24px 18px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">06</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Referral Momentum Compounds — After You Start</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Momentum isn't built by "someday." It's built by starting today.</p>
+    </div>
+  </div>
+  <div style="max-width:200px;margin:56px auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,204,0.5),transparent);"></div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:48px 32px 80px;text-align:center;">
+  <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;margin:0 0 16px;">Ready to Activate the Referral Potential Inside Your Business?</h2>
+  <p style="color:#9A99B0;font-size:16px;line-height:1.6;margin:0 0 30px;max-width:560px;margin-left:auto;margin-right:auto;">A quick strategy call is all it takes to identify the biggest opportunities in your business and map out the exact systems that will drive immediate results.</p>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:16px;padding:17px 32px;border-radius:999px;box-shadow:0 12px 32px rgba(0,229,204,0.32);">Book Your Free Strategy Call</a>
+</section>
+
+<footer style="background:#07082E;color:#aeb8c9;padding:56px 32px 28px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.06);">
+  <div class="om-foot-grid" style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:28px;width:auto;">
+      </div>
+      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for local service businesses — built by Joshua Munoz.</p>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Contact Info</div>
+      <div style="font-size:14px;line-height:2;">hello@ascendcrm.io<br>+1 978-857-4349</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Quick Links</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/" style="color:#aeb8c9;">Home</a>
+        <a href="/about" style="color:#aeb8c9;">About</a>
+        <a href="/services" style="color:#aeb8c9;">Services</a>
+        <a href="/contact" style="color:#aeb8c9;">Contact</a>
+        <a href="/book-strategy-call" style="color:#aeb8c9;">Free Strategy Call</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Services</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/database-reactivation-system" style="color:#aeb8c9;">Database Reactivation System</a>
+        <a href="/5-star-review-system" style="color:#aeb8c9;">5-Star Review System</a>
+        <a href="/ai-employee" style="color:#aeb8c9;">24/7 AI Employee</a>
+        <a href="/automated-referral-system" style="color:#aeb8c9;">Automated Referral System</a>
+        <a href="/meta-ads" style="color:#aeb8c9;">Meta Ads</a>
+        <a href="/full-crm-service" style="color:#aeb8c9;">Full CRM Service</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;font-size:13px;color:#6d7688;">© 2026 Ascend CRM. All rights reserved.</div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { servicesOpen: false, menuOpen: false };
+  toggleServices = () => this.setState(s => ({ servicesOpen: !s.servicesOpen }));
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  renderVals() {
+    return { servicesOpen: this.state.servicesOpen, toggleServices: this.toggleServices, menuOpen: this.state.menuOpen, toggleMenu: this.toggleMenu };
+  }
+}
+</script>
+</body>
+</html>

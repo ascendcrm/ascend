@@ -1,0 +1,56 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/revenue-revival",
+      "destination": "/database-reactivation-system",
+      "permanent": true
+    },
+    {
+      "source": "/reputation-accelerator",
+      "destination": "/5-star-review-system",
+      "permanent": true
+    },
+    {
+      "source": "/referral-growth-system",
+      "destination": "/automated-referral-system",
+      "permanent": true
+    },
+    {
+      "source": "/call-booking-page",
+      "destination": "/book-strategy-call",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

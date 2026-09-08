@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>24/7 AI Employee — Ascend CRM</title>
+<link rel="icon" type="image/png" href="/assets/ascend-logo.png">
+<link rel="apple-touch-icon" href="/assets/ascend-logo.png">
+<meta name="description" content="Never miss a lead. Your business answers every call, text, and chat instantly, around the clock.">
+<link rel="canonical" href="https://www.ascendcrm.io/ai-employee">
+<meta property="og:url" content="https://www.ascendcrm.io/ai-employee">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend CRM">
+<meta property="og:title" content="24/7 AI Employee — Ascend CRM">
+<meta property="og:description" content="Never miss a lead. Your business answers every call, text, and chat instantly, around the clock.">
+<meta property="og:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta property="og:image:width" content="1680">
+<meta property="og:image:height" content="945">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="24/7 AI Employee — Ascend CRM">
+<meta name="twitter:description" content="Never miss a lead. Your business answers every call, text, and chat instantly, around the clock.">
+<meta name="twitter:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background-color:#07082E; background-image: radial-gradient(circle at 12% 0%, rgba(0,229,204,0.12), transparent 42%), radial-gradient(circle at 88% 6%, rgba(74,129,229,0.14), transparent 40%); background-attachment:fixed; font-family:'Plus Jakarta Sans',sans-serif; color:#F3F1F2; }
+  a { color:#00E5CC; text-decoration:none; }
+  a:hover { color:#8FFFE6; }
+  @keyframes glowPulse { 0%,100% { opacity:0.55; } 50% { opacity:1; } }
+  /* om-responsive-pad */
+  @media (max-width: 720px) {
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+    header > div { padding-left: 20px !important; padding-right: 20px !important; }
+    footer { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(24px, 6.4vw, 32px) !important; line-height: 1.18 !important; }
+  }
+  @media (max-width: 480px) {
+    section { padding-left: 16px !important; padding-right: 16px !important; }
+  }
+  /* om-grid-4 */
+  .om-grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .om-grid-5 { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+  @media (max-width: 1100px) {
+    .om-grid-4 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+    .om-grid-5 { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+    .om-foot-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:28px !important; }
+  }
+  @media (max-width: 560px) {
+    .om-grid-4, .om-grid-5, .om-foot-grid { grid-template-columns:1fr !important; }
+  }
+  /* om-mobile */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg, iframe, video { max-width: 100%; }
+  @media (max-width: 900px) {
+    /* nav: let it breathe instead of cramming one row */
+    header > div { flex-wrap: wrap !important; row-gap: 12px !important; padding-top: 12px !important; padding-bottom: 12px !important; }
+    header > div > a:last-child { font-size: 13px !important; padding: 10px 16px !important; }
+  }
+  @media (max-width: 720px) {
+    /* nothing inside a flex/grid track may demand more room than the phone has */
+    [style*="min-width:300px"], [style*="min-width:320px"], [style*="min-width:340px"],
+    [style*="min-width:290px"], [style*="min-width:280px"], [style*="min-width: 300px"] {
+      min-width: 0 !important;
+    }
+    [style*="grid-template-columns:repeat(auto-fit,minmax(3"],
+    [style*="grid-template-columns:repeat(auto-fit,minmax(2"] {
+      grid-template-columns: 1fr !important;
+    }
+    [style*="max-width:400px"], [style*="max-width:520px"], [style*="max-width:540px"] { max-width: 100% !important; }
+    /* stacked columns get consistent vertical rhythm */
+    section > div[style*="display:flex"][style*="flex-wrap"] { gap: 28px !important; }
+    /* big display type */
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(23px, 6.2vw, 32px) !important; line-height: 1.2 !important; }
+    h3 { font-size: clamp(16px, 4.4vw, 20px) !important; }
+    /* comfortable body copy + tap targets */
+    p { font-size: 15px !important; }
+    a[style*="border-radius:999px"] { display: inline-block; min-height: 48px; line-height: 1.4; box-sizing: border-box; }
+    /* rounded cards feel tighter on a phone */
+    [style*="padding:56px 40px"] { padding: 32px 22px !important; }
+    [style*="padding:36px 28px"], [style*="padding:34px 28px"], [style*="padding:32px 26px"] { padding: 24px 18px !important; }
+    [style*="border-radius:22px"] { border-radius: 16px !important; }
+  }
+  @media (max-width: 480px) {
+    header nav { gap: 14px !important; }
+    [style*="padding:32px"] { padding: 22px !important; }
+    [style*="padding:30px"], [style*="padding:28px"], [style*="padding:26px"] { padding: 20px !important; }
+    a[style*="font-size:16px"][style*="border-radius:999px"] { width: 100%; text-align: center; }
+  }
+  /* om-nav */
+  .om-burger { display:none; }
+  @media (max-width: 900px) {
+    header nav.om-desk-nav { display:none !important; }
+    .om-desk-cta { display:none !important; }
+    .om-burger { display:flex !important; }
+    header > div { flex-wrap:nowrap !important; justify-content:space-between !important; }
+  }
+  @media (min-width: 901px) {
+    .om-mobile-panel { display:none !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+<header style="position:sticky;top:0;z-index:100;background:rgba(7,8,46,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.12);">
+  <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;">
+      <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:32px;width:auto;flex:none;">
+    </a>
+    <nav class="om-desk-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;">
+      <a href="/" style="color:#F3F1F2;font-weight:600;font-size:15px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:600;font-size:15px;">About</a>
+      <div style="position:relative;">
+        <button onClick="{{ toggleServices }}" style="background:none;border:none;font-family:'Plus Jakarta Sans',sans-serif;color:#00E5CC;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;">
+          Services <span style="font-size:11px;transform:translateY(1px);">▾</span>
+        </button>
+        <sc-if value="{{ servicesOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:32px;left:0;z-index:120;background:#0D0E4A;border:1px solid rgba(255,255,255,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,0.55);padding:8px;min-width:230px;display:flex;flex-direction:column;gap:2px;">
+            <a href="/services" style="color:#F3F1F2;font-weight:600;font-size:14px;padding:8px 10px;border-radius:8px;">All Services</a>
+            <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Database Reactivation System</a>
+            <a href="/5-star-review-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">5-Star Review System</a>
+            <a href="/ai-employee" style="color:#00E5CC;font-weight:700;font-size:14px;padding:8px 10px;border-radius:8px;">24/7 AI Employee</a>
+            <a href="/automated-referral-system" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Automated Referral System</a>
+            <a href="/meta-ads" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Meta Ads</a>
+            <a href="/full-crm-service" style="color:#C8C7DC;font-size:14px;padding:8px 10px;border-radius:8px;">Full CRM Service</a>
+          </div>
+        </sc-if>
+      </div>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:600;font-size:15px;">Contact</a>
+    </nav>
+    <button class="om-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;">
+      <span style="display:flex;flex-direction:column;gap:4px;width:18px;">
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+      </span>
+    </button>
+
+    <a class="om-desk-cta" href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:12px 20px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,229,204,0.35);">Book Your Free Strategy Call</a>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="om-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.12);background:#0D0E4A;padding:18px 20px 24px;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;">
+      <a href="/" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">About</a>
+      <div style="color:#00E5CC;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:16px 12px 8px;">SERVICES</div>
+      <a href="/services" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">All Services</a>
+      <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Database Reactivation System</a>
+      <a href="/5-star-review-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">5-Star Review System</a>
+      <a href="/ai-employee" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">24/7 AI Employee</a>
+      <a href="/automated-referral-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Automated Referral System</a>
+      <a href="/meta-ads" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Meta Ads</a>
+      <a href="/full-crm-service" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Full CRM Service</a>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;margin-top:8px;">Contact</a>
+      <a href="/book-strategy-call" style="margin-top:14px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:800;font-size:15px;padding:16px 20px;border-radius:12px;text-align:center;box-shadow:0 8px 22px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+    </div>
+  </sc-if>
+</header>
+
+<section style="width:100%;box-sizing:border-box;max-width:900px;margin:0 auto;padding:64px 32px 20px;text-align:center;">
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);color:#8FFFE6;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;margin-bottom:22px;">24/7 AI EMPLOYEE</div>
+  <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.2;font-weight:800;margin:0 0 24px;letter-spacing:-0.01em;">Never Miss a Lead — Your Business Responds <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Instantly, 24/7</span></h1>
+  <p style="color:#F3F1F2;font-size:17px;line-height:1.6;font-weight:700;margin:0 0 10px;">In today's market, customers choose the business that replies first.</p>
+  <p style="color:#C8C7DC;font-size:16px;line-height:1.6;margin:0 0 28px;">The 24/7 AI Employee installs always-on voice and chat agents that answer inquiries, qualify leads, and book appointments instantly — even when you're busy, with clients, or off the clock.</p>
+
+  <div style="position:relative;border-radius:18px;padding:2px;background:linear-gradient(135deg,#00E5CC,#4A81E5,#00E5CC);box-shadow:0 20px 50px rgba(0,229,204,0.25);margin-bottom:28px;">
+    <div style="position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;">
+      <iframe src="https://player.vimeo.com/video/1144520997" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  <p style="color:#F3F1F2;font-size:16px;line-height:1.7;font-weight:700;margin:0 0 28px;">This is how businesses stay responsive, competitive, and consistent without adding more staff or taking on more work.</p>
+
+  <div style="border:1px solid rgba(0,229,204,0.3);border-radius:14px;padding:24px 28px;margin-bottom:28px;background:rgba(255,255,255,0.03);">
+    <p style="font-size:17px;line-height:1.5;color:#F3F1F2;font-weight:700;margin:0 0 8px;">Ready to See How Instant Responses Can Transform Your Customer Conversations?</p>
+    <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Book a free strategy call and we'll walk you through exactly where slow or missed responses are costing you opportunities.</p>
+  </div>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;padding:15px 28px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+  <div style="flex:1 1 420px;min-width:300px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">YOUR NEW FRONTLINE EMPLOYEE</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 18px;">A Fully Trained AI Employee That Handles Customer Inquiries — 24 Hours a Day</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">Imagine having a frontline employee who responds instantly, never gets tired, never forgets what to say, never calls in sick, and never misses a single customer inquiry — no matter the time of day.</p>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">This system installs AI Voice Agents and AI Chat Agents trained just like a real team member — learning your services, pricing, FAQs, processes, tone, and brand.</p>
+    <h3 style="font-size:15px;font-weight:700;margin:20px 0 12px;">Here's what your AI employee handles for you:</h3>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Answers every call, text, and message instantly</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Provides accurate information based on your business</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Asks the right questions to qualify the lead</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Books appointments or sends scheduling links directly</p>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.6;margin:0;">• Supports customers during evenings, weekends, and holidays</p>
+    </div>
+    <a href="/book-strategy-call" style="display:inline-block;margin-top:20px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:14px;padding:13px 24px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+  <div style="flex:1 1 320px;min-width:280px;">
+    <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(0,229,204,0.22);box-shadow:0 20px 50px rgba(0,0,0,0.35);">
+      <img src="/assets/ai-employee-infographic.png" alt="Your AI Employee working 24/7 across calls, DMs, website chat, and messenger" style="width:100%;display:block;" data-om-raster="">
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:900px;margin:0 auto;text-align:center;">
+    <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE SILENT COST OF SLOW RESPONSES</div>
+    <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;margin:0 0 20px;">Customers Don't Announce When They Move On — They Just Choose the Business That Replies First</h2>
+    <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 24px;">There's no alert, no cancellation, no warning — just a customer who quietly picks the next business on Google because they replied faster.</p>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:14px;">
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Customers Choose the Business That Replies First</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Respond 20-30 minutes later than a competitor and the customer often never circles back.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Missed Calls Often Mean Missed Customers</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">If they reach voicemail, most simply call the next business on the list.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Unanswered Messages Lose Momentum Fast</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Without a quick reply, interest fades or they move on to someone else.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">After-Hours Inquiries Slip to Competitors</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">If you're closed but a competitor is available, the customer rarely waits.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #3F8F1F;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Busy Teams Can't Respond to Everyone at Once</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">It's not a performance issue — it's a bandwidth issue.</p>
+    </div>
+    <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+      <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Repeating the Same Answers Slows Everyone Down</h3>
+      <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Answering "Do you service my area?" manually drains time and delays other leads.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;">
+    <a href="/book-strategy-call" style="color:#00857A;font-weight:700;font-size:15px;">Want to see how it works? Book your free strategy call →</a>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">CHALLENGES YOUR AI EMPLOYEE ELIMINATES</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">The Tasks That Slow You Down — Gone</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">Here's what it takes off your plate:</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">01</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Calls and Messages While You're With Customers</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee steps in the moment an inquiry comes through — without disrupting your work.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">02</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">After-Hours Inquiries You Can't Respond to Until Tomorrow</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee responds instantly at 10pm, 6am, weekends, and holidays.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">03</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Overflow During Busy Spikes</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee never gets overloaded or distracted.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">04</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Leads Going Cold Because Replies Aren't Instant</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee engages immediately, capturing interest while it's fresh.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">05</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Repetitive Questions That Drain Your Time</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee answers these quickly, consistently, and accurately.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin-bottom:12px;">06</div>
+      <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Inconsistent Information From Different Staff</h3>
+      <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee delivers the same clear, confident answer every single time.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHAT WE BUILD FOR YOU</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">A Fully Done-For-You Setup — a Trained AI Employee Ready to Work 24/7</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">You don't need to learn the tech, write scripts, or figure out how to train an AI agent. We handle every step.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #00E5CC;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Comprehensive AI Employee Training</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Trained on your services, pricing, processes, FAQs, tone, policies, and how to qualify leads.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #4A81E5;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">AI Voice Agent Setup</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">A natural-sounding phone representative that answers every call, holds real conversations, and books appointments.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #6B32BF;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">AI Chat Agent Setup</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">For website chat, SMS, and social messages — responds instantly and consistently at any hour.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #C9750A;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Custom Conversation Flows</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Structured flows so your AI employee knows what to say, what to ask, and how to move toward a booking.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-top:3px solid #3F8F1F;border-radius:14px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#981EE2,#4A81E5);margin-bottom:16px;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 8px;">Appointment Booking & Lead Capture Automations</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Sends booking links, schedules appointments, collects details, and syncs into your CRM automatically.</p>
+      </div>
+      <div style="background:#EEFCF9;border:1px solid rgba(0,229,204,0.4);border-radius:16px;padding:26px;display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:800;margin:0 0 8px;">Testing, QA & Ongoing Adjustments</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Every flow tested and refined before launch — then updated as your business evolves. No downtime.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">How Your AI Employee Responds, Guides, and Books — Instantly</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">A precise, predictable process that ensures every inquiry gets answered immediately.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 01</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">A Customer Reaches Out</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Phone, text, chat, or social — your AI employee is the first to respond, instantly.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 02</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">It Replies With Helpful, Accurate Information</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Fast, friendly, clear answers using training built specifically for your business.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 03</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">It Guides the Customer Through Their Questions</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Service details, availability, pricing, next steps — keeping customers engaged and moving forward.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #C9750A;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 04</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">It Collects the Details Needed to Qualify</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Name, reason for inquiry, location, timeline — collected cleanly without your team chasing it down.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #3F8F1F;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 05</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">It Moves the Customer Toward Booking</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Sends your booking link or schedules directly — no delays, no dropped conversations.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;margin-bottom:12px;">STEP 06</div>
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Everything Syncs Into the CRM Automatically</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Your team always knows who the customer is, what they need, and what's been handled.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;grid-column:span 1;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 8px;">Step 07 — Your Team Steps In to Deliver Service</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">By the time you're involved, the customer's already been answered, guided, and may be booked.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <div style="color:#00857A;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">WHAT CHANGES WHEN EVERY INQUIRY GETS HELP INSTANTLY</div>
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">What Businesses Commonly Experience Once Their AI Employee Goes Live</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A Higher Volume of Customer Conversations</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Immediate replies keep far more customers engaged — automatically, without extra work.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Customers Getting Answers Right Away</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Instant answers remove hesitation and give customers confidence to take the next step.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">A Smoother, More Guided Customer Experience</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Consistent direction ensures customers never feel lost or stuck.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">More After-Hours and Peak-Time Appointments</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Motivated customers who reach out when you're closed get help right when they're ready.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Less Pressure on You and Your Team</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Your AI employee absorbs the constant-communication load, giving your team breathing room.</p>
+      </div>
+      <div style="background:none;border:none;border-bottom:1px solid #E1E4F2;border-radius:0;padding:24px 0;">
+        <h3 style="color:#12132E;font-size:15px;font-weight:700;margin:0 0 10px;">Cleaner Lead Information Inside Your CRM</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0;">Every lead comes with relevant details, context, and accurate notes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE PSYCHOLOGY BEHIND WHY AI WINS</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Customers Make Decisions Fast — The Business That Responds First Wins</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">If they get a quick, clear response, they stay engaged. If they wait, they drift or choose someone else.</p>
+  </div>
+  <div class="om-grid-5" style="">
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Instant Responses Match Emotional Timing</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Your AI employee meets the moment with an immediate reply while intent is highest.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #4A81E5;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Speed Creates Trust Before You Talk to the Customer</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Before comparing pricing, they've already formed a positive impression based on speed.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #6B32BF;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Consistent Answers Remove Uncertainty</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Your AI employee always knows the right answers and delivers them instantly.</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #C9750A;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Guided Conversations Reduce Drop-Off</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Most customers need guidance, not just answers — your AI employee leads the way.</p>
+    </div>
+    <div style="background:rgba(0,229,204,0.07);border:1px solid rgba(0,229,204,0.25);border-top:3px solid #00E5CC;border-radius:14px;padding:26px;">
+      <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">24/7 Availability Matches Real Customer Behavior</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Your AI employee is always there — catching every opportunity you would've lost.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:36px;">
+    <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;">Book Your Free Strategy Call</a>
+  </div>
+</section>
+
+<section style="background:#FAFBFF;padding:64px 32px;border-top:1px solid #E7E9F5;border-bottom:1px solid #E7E9F5;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px;">
+      <h2 style="color:#12132E;font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Is This the AI Employee That Will Transform Your Customer Experience?</h2>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0;">If fast communication, clear answers, and reliable engagement matter in your business — this is built for you.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #00E5CC;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Service Businesses Competing for Customers Comparing Options</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">Your AI employee ensures you're always the first to answer — instantly and professionally.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">HVAC • Plumbing • Electrical • Landscaping • Pest Control • Tree Service • Roofing • Pool Builders • Remodelers • Cleaning</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #4A81E5;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">Appointment-Based Businesses That Need Fast Answers</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">It supports the front-desk load so your team can focus on service, not nonstop messaging.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Med Spas • Chiropractors • Hair Salons • Gyms • Yoga Studios • Personal Trainers • Weight Loss Clinics</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-left:4px solid #6B32BF;border-radius:12px;padding:22px 26px;box-shadow:0 3px 14px rgba(18,19,46,0.04);">
+        <h3 style="color:#12132E;font-size:16px;font-weight:700;margin:0 0 10px;">High-Trust Local Professionals Who Must Respond Quickly</h3>
+        <p style="color:#5C5E78;font-size:13px;line-height:1.6;margin:0 0 12px;">Your AI employee builds trust from the first interaction with clear, fast guidance.</p>
+        <p style="color:#00857A;font-size:12px;line-height:1.6;margin:0;">Real Estate • Mortgage Brokers • Accountants • Insurance Advisors • Property Managers • Car Dealerships • Restaurants • Solar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:64px 32px;">
+  <div style="text-align:center;max-width:760px;margin:0 auto 40px;">
+    <div style="color:#00E5CC;font-weight:700;font-size:13px;letter-spacing:0.06em;margin-bottom:12px;">THE BEST TIME TO BECOME THE MOST RESPONSIVE BUSINESS?</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;font-weight:800;margin:0 0 16px;">Right Now.</h2>
+    <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0;">The businesses winning today are the ones that respond first, guide customers clearly, and make the next step effortless.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;">
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">01</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Customer Expectations Are Rising</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">A 24/7 AI employee ensures you're always the first to respond.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">02</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Your Competitors Are Getting Faster</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Implementing AI support now sets the standard instead of catching up later.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">03</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">High-Intent Customers Reach Out at All Hours</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Your AI employee captures these moments in real time.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">04</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Instant Responses Create a Stronger First Impression</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Speed communicates reliability — this often determines who they choose.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(255,255,255,0.12);border-radius:0;padding:24px 0;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">05</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">Every Inquiry You Miss Today Is a Customer You Won't Get Tomorrow</h3>
+      <p style="color:#9A99B0;font-size:13px;line-height:1.6;margin:0;">Your AI employee plugs that leak instantly.</p>
+    </div>
+    <div style="background:none;border:none;border-bottom:1px solid rgba(0,229,204,0.35);border-left:3px solid #00E5CC;border-radius:0;padding:24px 0 24px 18px;">
+      <div style="color:#00E5CC;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px;">06</div>
+      <h3 style="font-size:14px;font-weight:700;margin:0 0 8px;">The Sooner You Install It, the Faster Your Experience Improves</h3>
+      <p style="color:#C8C7DC;font-size:13px;line-height:1.6;margin:0;">Your team gets relief, your customers get clarity — and improvements compound.</p>
+    </div>
+  </div>
+  <div style="max-width:200px;margin:56px auto 0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,204,0.5),transparent);"></div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1100px;margin:0 auto;padding:48px 32px 80px;text-align:center;">
+  <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;margin:0 0 16px;">Ready to See What a 24/7 AI Employee Could Do for Your Business?</h2>
+  <p style="color:#9A99B0;font-size:16px;line-height:1.6;margin:0 0 30px;max-width:560px;margin-left:auto;margin-right:auto;">A quick strategy call is all it takes to identify the biggest opportunities in your business and map out the exact systems that will drive immediate results.</p>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:700;font-size:16px;padding:17px 32px;border-radius:999px;box-shadow:0 12px 32px rgba(0,229,204,0.32);">Book Your Free Strategy Call</a>
+</section>
+
+<footer style="background:#07082E;color:#aeb8c9;padding:56px 32px 28px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.06);">
+  <div class="om-foot-grid" style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:28px;width:auto;">
+      </div>
+      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for local service businesses — built by Joshua Munoz.</p>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Contact Info</div>
+      <div style="font-size:14px;line-height:2;">hello@ascendcrm.io<br>+1 978-857-4349</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Quick Links</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/" style="color:#aeb8c9;">Home</a>
+        <a href="/about" style="color:#aeb8c9;">About</a>
+        <a href="/services" style="color:#aeb8c9;">Services</a>
+        <a href="/contact" style="color:#aeb8c9;">Contact</a>
+        <a href="/book-strategy-call" style="color:#aeb8c9;">Free Strategy Call</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Services</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/database-reactivation-system" style="color:#aeb8c9;">Database Reactivation System</a>
+        <a href="/5-star-review-system" style="color:#aeb8c9;">5-Star Review System</a>
+        <a href="/ai-employee" style="color:#aeb8c9;">24/7 AI Employee</a>
+        <a href="/automated-referral-system" style="color:#aeb8c9;">Automated Referral System</a>
+        <a href="/meta-ads" style="color:#aeb8c9;">Meta Ads</a>
+        <a href="/full-crm-service" style="color:#aeb8c9;">Full CRM Service</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;font-size:13px;color:#6d7688;">© 2026 Ascend CRM. All rights reserved.</div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { servicesOpen: false, menuOpen: false };
+  toggleServices = () => this.setState(s => ({ servicesOpen: !s.servicesOpen }));
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  renderVals() {
+    return { servicesOpen: this.state.servicesOpen, toggleServices: this.toggleServices, menuOpen: this.state.menuOpen, toggleMenu: this.toggleMenu };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Ascend CRM — Turn More Leads Into Revenue, Automatically</title>
+<link rel="icon" type="image/png" href="/assets/ascend-logo.png">
+<link rel="apple-touch-icon" href="/assets/ascend-logo.png">
+<meta name="description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, and turn more opportunities into paying customers.">
+<link rel="canonical" href="https://www.ascendcrm.io/">
+<meta property="og:url" content="https://www.ascendcrm.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend CRM">
+<meta property="og:title" content="Ascend CRM — Turn More Leads Into Revenue, Automatically">
+<meta property="og:description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, and turn more opportunities into paying customers.">
+<meta property="og:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta property="og:image:width" content="1680">
+<meta property="og:image:height" content="945">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ascend CRM — Turn More Leads Into Revenue, Automatically">
+<meta name="twitter:description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, and turn more opportunities into paying customers.">
+<meta name="twitter:image" content="https://www.ascendcrm.io/assets/hero-contractor.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background-color:#07082E; background-image: radial-gradient(circle at 12% 0%, rgba(0,229,204,0.12), transparent 42%), radial-gradient(circle at 88% 6%, rgba(74,129,229,0.14), transparent 40%); background-attachment:fixed; font-family:'Plus Jakarta Sans',sans-serif; color:#F3F1F2; }
+  a { color:#00E5CC; text-decoration:none; }
+  a:hover { color:#8FFFE6; }
+  @keyframes glowPulse { 0%,100% { opacity:0.55; } 50% { opacity:1; } }
+  @keyframes spinSlow { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+  @keyframes gridDrift { from { transform:translateY(0); } to { transform:translateY(48px); } }
+  @keyframes dataFlow { from { background-position:0 0; } to { background-position:200px 0; } }
+  @keyframes orbFloat { 0%,100% { transform:translate(0,0) scale(1); opacity:0.5; } 50% { transform:translate(24px,-22px) scale(1.12); opacity:0.85; } }
+  @keyframes lightSweepH { 0% { transform:translateX(-120%); } 100% { transform:translateX(220%); } }
+  @keyframes lightSweepV { 0% { transform:translateY(-120%); } 100% { transform:translateY(220%); } }
+  @keyframes scanGlow { 0%,100% { opacity:0.25; } 50% { opacity:0.7; } }
+  @keyframes revealUp { from { opacity:0; transform:translateY(26px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes logoMarquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity:1 !important; animation:none !important; } }
+  ::selection { background:#00E5CC; color:#fff; }
+  /* om-responsive-pad */
+  @media (max-width: 720px) {
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+    header > div { padding-left: 20px !important; padding-right: 20px !important; }
+    footer { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(24px, 6.4vw, 32px) !important; line-height: 1.18 !important; }
+  }
+  @media (max-width: 480px) {
+    section { padding-left: 16px !important; padding-right: 16px !important; }
+  }
+  /* om-grid-4 */
+  .om-grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .om-grid-5 { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+  @media (max-width: 1100px) {
+    .om-grid-4 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+    .om-grid-5 { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+    .om-foot-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:28px !important; }
+  }
+  @media (max-width: 560px) {
+    .om-grid-4, .om-grid-5, .om-foot-grid { grid-template-columns:1fr !important; }
+  }
+  @media (max-width: 720px) {
+    /* hero: taller scrim so headline stays legible over the photo */
+    section[style*="min-height:560px"] { min-height: 0 !important; }
+    section[style*="min-height:560px"] > div[style*="background-image:url(/assets/hero-contractor.png)"] { background-position: 70% center !important; }
+    section[style*="min-height:560px"] > div[style*="linear-gradient(90deg"] { background: linear-gradient(180deg,rgba(7,8,46,0.82) 0%,rgba(7,8,46,0.9) 45%,rgba(7,8,46,0.96) 100%) !important; }
+  }
+  /* om-mobile */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg, iframe, video { max-width: 100%; }
+  @media (max-width: 900px) {
+    /* nav: let it breathe instead of cramming one row */
+    header > div { flex-wrap: wrap !important; row-gap: 12px !important; padding-top: 12px !important; padding-bottom: 12px !important; }
+    header > div > a:last-child { font-size: 13px !important; padding: 10px 16px !important; }
+  }
+  @media (max-width: 720px) {
+    /* nothing inside a flex/grid track may demand more room than the phone has */
+    [style*="min-width:300px"], [style*="min-width:320px"], [style*="min-width:340px"],
+    [style*="min-width:290px"], [style*="min-width:280px"], [style*="min-width: 300px"] {
+      min-width: 0 !important;
+    }
+    [style*="grid-template-columns:repeat(auto-fit,minmax(3"],
+    [style*="grid-template-columns:repeat(auto-fit,minmax(2"] {
+      grid-template-columns: 1fr !important;
+    }
+    [style*="max-width:400px"], [style*="max-width:520px"], [style*="max-width:540px"] { max-width: 100% !important; }
+    /* stacked columns get consistent vertical rhythm */
+    section > div[style*="display:flex"][style*="flex-wrap"] { gap: 28px !important; }
+    /* big display type */
+    h1 { font-size: clamp(28px, 8vw, 42px) !important; line-height: 1.14 !important; }
+    h2 { font-size: clamp(23px, 6.2vw, 32px) !important; line-height: 1.2 !important; }
+    h3 { font-size: clamp(16px, 4.4vw, 20px) !important; }
+    /* comfortable body copy + tap targets */
+    p { font-size: 15px !important; }
+    a[style*="border-radius:999px"] { display: inline-block; min-height: 48px; line-height: 1.4; box-sizing: border-box; }
+    /* rounded cards feel tighter on a phone */
+    [style*="padding:56px 40px"] { padding: 32px 22px !important; }
+    [style*="padding:36px 28px"], [style*="padding:34px 28px"], [style*="padding:32px 26px"] { padding: 24px 18px !important; }
+    [style*="border-radius:22px"] { border-radius: 16px !important; }
+  }
+  @media (max-width: 480px) {
+    header nav { gap: 14px !important; }
+    [style*="padding:32px"] { padding: 22px !important; }
+    [style*="padding:30px"], [style*="padding:28px"], [style*="padding:26px"] { padding: 20px !important; }
+    a[style*="font-size:16px"][style*="border-radius:999px"] { width: 100%; text-align: center; }
+  }
+  /* om-nav */
+  .om-burger { display:none; }
+  @media (max-width: 900px) {
+    header nav.om-desk-nav { display:none !important; }
+    .om-desk-cta { display:none !important; }
+    .om-burger { display:flex !important; }
+    header > div { flex-wrap:nowrap !important; justify-content:space-between !important; }
+  }
+  @media (min-width: 901px) {
+    .om-mobile-panel { display:none !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+<header style="position:sticky;top:0;z-index:100;background:rgba(7,8,46,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.12);">
+  <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;">
+      <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:32px;width:auto;flex:none;">
+    </a>
+    <nav class="om-desk-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;">
+      <a href="/" style="color:#F3F1F2;font-weight:600;font-size:15px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:600;font-size:15px;">About</a>
+      <div style="position:relative;">
+        <button onClick="{{ toggleServices }}" style="background:none;border:none;font-family:'Plus Jakarta Sans',sans-serif;color:#F3F1F2;font-weight:600;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;">
+          Services <span style="font-size:11px;transform:translateY(1px);">▾</span>
+        </button>
+        <sc-if value="{{ servicesOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;top:32px;left:0;z-index:120;background:#0D0E4A;border:1px solid rgba(255,255,255,0.12);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,0.55);padding:8px;min-width:230px;display:flex;flex-direction:column;gap:2px;">
+            <a href="/services" style="color:#F3F1F2;font-weight:600;font-size:14px;padding:8px 10px;border-radius:8px;">All Services</a>
+            <a href="/database-reactivation-system" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">Database Reactivation System</a>
+            <a href="/5-star-review-system" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">5-Star Review System</a>
+            <a href="/ai-employee" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">24/7 AI Employee</a>
+            <a href="/automated-referral-system" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">Automated Referral System</a>
+            <a href="/meta-ads" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">Meta Ads</a>
+            <a href="/full-crm-service" style="color:#9A99B0;font-size:14px;padding:8px 10px;border-radius:8px;">Full CRM Service</a>
+          </div>
+        </sc-if>
+      </div>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:600;font-size:15px;">Contact</a>
+    </nav>
+    <button class="om-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;">
+      <span style="display:flex;flex-direction:column;gap:4px;width:18px;">
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+        <span style="display:block;height:2px;border-radius:2px;background:#F3F1F2;"></span>
+      </span>
+    </button>
+
+    <a class="om-desk-cta" href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:14px;padding:12px 20px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,229,204,0.35);">Book Your Free Strategy Call</a>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="om-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.12);background:#0D0E4A;padding:18px 20px 24px;display:flex;flex-direction:column;gap:2px;max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;">
+      <a href="/" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">Home</a>
+      <a href="/about" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;">About</a>
+      <div style="color:#00E5CC;font-weight:800;font-size:11px;letter-spacing:0.14em;padding:16px 12px 8px;">SERVICES</div>
+      <a href="/services" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">All Services</a>
+      <a href="/database-reactivation-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Database Reactivation System</a>
+      <a href="/5-star-review-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">5-Star Review System</a>
+      <a href="/ai-employee" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">24/7 AI Employee</a>
+      <a href="/automated-referral-system" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Automated Referral System</a>
+      <a href="/meta-ads" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Meta Ads</a>
+      <a href="/full-crm-service" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Full CRM Service</a>
+      <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;margin-top:8px;">Contact</a>
+      <a href="/book-strategy-call" style="margin-top:14px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:800;font-size:15px;padding:16px 20px;border-radius:12px;text-align:center;box-shadow:0 8px 22px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
+    </div>
+  </sc-if>
+</header>
+
+<section style="position:relative;overflow:hidden;min-height:560px;display:flex;align-items:center;">
+  <div style="position:absolute;inset:0;background-image:url(/assets/hero-contractor.png);background-size:cover;background-position:center right;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,46,0.96) 0%,rgba(7,8,46,0.9) 34%,rgba(7,8,46,0.55) 58%,rgba(7,8,46,0.18) 100%);"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,46,0.35) 0%,transparent 30%,rgba(7,8,46,0.55) 100%);"></div>
+  <div style="position:relative;width:100%;max-width:1240px;margin:0 auto;padding:88px 32px 96px;">
+    <div style="max-width:640px;">
+      <div style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);color:#8FFFE6;font-weight:700;font-size:12px;letter-spacing:0.06em;padding:9px 16px;border-radius:999px;margin-bottom:24px;border:1px solid rgba(0,229,204,0.3);"><span style="width:7px;height:7px;border-radius:50%;background:#00E5CC;display:inline-block;animation:glowPulse 1.8s ease-in-out infinite;"></span>AI-POWERED GROWTH SYSTEMS FOR HOME SERVICES</div>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:58px;line-height:1.06;font-weight:800;margin:0 0 22px;letter-spacing:-0.015em;text-shadow:0 4px 24px rgba(7,8,46,0.6);">Turn More Leads Into Revenue — <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Automatically</span></h1>
+      <p style="font-size:18px;line-height:1.6;color:#F3F1F2;margin:0 0 30px;max-width:560px;">Ascend CRM helps home service businesses respond faster, follow up automatically, and <strong style="color:#00E5CC;">turn more opportunities into paying customers.</strong></p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px;">
+        <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:16px;padding:16px 28px;border-radius:999px;box-shadow:0 10px 28px rgba(0,229,204,0.32);">Book Your Free Strategy Call</a>
+        <a href="/services" style="background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);color:#F3F1F2;font-weight:700;font-size:16px;padding:16px 28px;border-radius:999px;border:1px solid rgba(255,255,255,0.28);">See Our Systems</a>
+      </div>
+      <p style="color:#C8C7DC;font-size:14px;line-height:1.7;font-weight:600;margin:0;max-width:520px;"><span style="color:#00E5CC;">★★★★★</span> More reviews. More calls answered. More customers reactivated — with zero extra staff and without spending on paid ads.</p>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;background:#0D0E4A;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:64px 32px;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,229,204,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,204,0.07) 1px,transparent 1px);background-size:48px 48px;animation:gridDrift 7s linear infinite;pointer-events:none;"></div>
+  <div style="position:absolute;top:8%;left:-6%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,204,0.2),transparent 68%);filter:blur(8px);animation:orbFloat 11s ease-in-out infinite;pointer-events:none;"></div>
+  <div style="position:absolute;bottom:2%;right:-4%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(74,129,229,0.22),transparent 68%);filter:blur(8px);animation:orbFloat 14s ease-in-out infinite reverse;pointer-events:none;"></div>
+  <div style="position:absolute;top:22%;left:0;right:0;height:1px;background-image:linear-gradient(90deg,transparent,rgba(0,229,204,0.5) 20%,transparent 40%);background-size:200px 1px;background-repeat:repeat-x;animation:dataFlow 3.2s linear infinite;pointer-events:none;"></div>
+  <div style="position:absolute;top:68%;left:0;right:0;height:1px;background-image:linear-gradient(90deg,transparent,rgba(74,129,229,0.45) 20%,transparent 40%);background-size:200px 1px;background-repeat:repeat-x;animation:dataFlow 4.6s linear infinite reverse;pointer-events:none;"></div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;">
+    <div style="max-width:720px;margin:0 0 36px;">
+      <div style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:12px;">THE REALITY</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;line-height:1.15;font-weight:800;margin:0 0 12px;">YOUR BUSINESS SHOULDN'T RELY ON MEMORY.<br><span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">IT SHOULD RUN ON SYSTEMS.</span></h2>
+      <p style="color:#C8C7DC;font-size:15px;line-height:1.65;margin:0;">Most home service businesses don't need more leads — they need better systems. Here's the difference once one is actually running.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(217,54,54,0.12);border:1px solid rgba(217,54,54,0.35);color:#FF8A8A;font-weight:700;font-size:12px;letter-spacing:0.08em;padding:6px 14px;border-radius:999px;margin-bottom:14px;">BEFORE</div>
+        <div style="border-radius:14px;overflow:hidden;border:1px solid rgba(217,54,54,0.25);margin-bottom:18px;">
+          <img src="/assets/reality-owner.png" alt="Overwhelmed home service business owner surrounded by missed calls and follow-ups" style="width:100%;display:block;filter:grayscale(0.15);">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(217,54,54,0.15);color:#FF8A8A;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✕</div>
+            <p style="color:#C8C7DC;font-size:13.5px;line-height:1.55;margin:0;">Every missed call is a lost customer — they just call the next business on Google.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(217,54,54,0.15);color:#FF8A8A;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✕</div>
+            <p style="color:#C8C7DC;font-size:13.5px;line-height:1.55;margin:0;">Old leads sit cold in a spreadsheet — never followed up with.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(217,54,54,0.15);color:#FF8A8A;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✕</div>
+            <p style="color:#C8C7DC;font-size:13.5px;line-height:1.55;margin:0;">Reviews and referrals stay flat — nothing's asking happy customers to talk.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,204,0.12);border:1px solid rgba(0,229,204,0.4);color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.08em;padding:6px 14px;border-radius:999px;margin-bottom:14px;">AFTER</div>
+        <div style="border-radius:14px;overflow:hidden;border:1px solid rgba(0,229,204,0.28);box-shadow:0 0 34px rgba(0,229,204,0.14);position:relative;margin-bottom:18px;">
+          <img src="/assets/ascend-flow-visual.png" alt="Ascend CRM turning missed calls and messages into booked revenue" style="width:100%;display:block;">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(0,229,204,0.15);color:#00E5CC;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✓</div>
+            <p style="color:#F3F1F2;font-size:13.5px;line-height:1.55;margin:0;">Every call and message gets answered instantly, day or night.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(0,229,204,0.15);color:#00E5CC;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✓</div>
+            <p style="color:#F3F1F2;font-size:13.5px;line-height:1.55;margin:0;">Old leads get reactivated automatically — turning cold contacts into booked jobs.</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="width:20px;height:20px;border-radius:50%;background:rgba(0,229,204,0.15);color:#00E5CC;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px;">✓</div>
+            <p style="color:#F3F1F2;font-size:13.5px;line-height:1.55;margin:0;">Reviews and referrals roll in on their own, every time a job wraps up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<section style="background:#FAFBFF;padding:80px 32px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+    <div style="flex:1 1 380px;min-width:300px;">
+      <div style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:14px;">THE SOLUTION</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:34px;line-height:1.15;font-weight:800;margin:0 0 18px;color:#12132E;">THE ASCEND REVENUE FLYWHEEL™</h2>
+      <p style="color:#5C5E78;font-size:16px;line-height:1.7;margin:0 0 16px;">Most home service businesses treat every lead like a one-time opportunity. The Ascend Revenue Flywheel™ transforms every customer interaction into momentum.</p>
+      <p style="color:#5C5E78;font-size:16px;line-height:1.7;margin:0 0 24px;">Four systems work together, each one feeding the next — so the leads and customers you already have keep bringing in more work.</p>
+      <div style="color:#5C5E78;font-weight:700;font-size:12px;letter-spacing:0.14em;margin:0 0 14px;">OUR SERVICES</div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px;">
+        <sc-for list="{{ serviceAccordion }}" as="svc" hint-placeholder-count="4">
+          <div style="{{ svc.cardStyle }}">
+            <button onClick="{{ svc.onToggle }}" style="width:100%;background:none;border:none;font-family:'Figtree',sans-serif;text-align:left;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;">
+              <span style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:15px;color:#12132E;"><span style="{{ svc.dotStyle }}"></span>{{ svc.name }}</span>
+              <span style="{{ svc.iconStyle }}">+</span>
+            </button>
+            <sc-if value="{{ svc.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 18px 18px 44px;">
+                <p style="color:#5C5E78;font-size:14px;line-height:1.65;margin:0 0 14px;">{{ svc.desc }}</p>
+                <a href="{{ svc.href }}" style="{{ svc.btnStyle }}">Learn More</a>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <a href="/services" style="display:inline-block;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.25);">Explore All Four Systems</a>
+    </div>
+    <div style="flex:1 1 460px;min-width:320px;">
+      <div style="position:relative;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(13,14,74,0.25);">
+        <img src="/assets/revenue-flywheel.png" alt="The Ascend Revenue Flywheel — 24/7 AI Employee, Database Reactivation System, 5-Star Review System, and Automated Referral System" style="width:100%;display:block;">
+        <a href="/ai-employee" aria-label="24/7 AI Employee" style="position:absolute;top:4%;left:4%;width:44%;height:44%;border-radius:16px;display:block;transition:background 0.2s ease,box-shadow 0.2s ease;" style-hover="background:rgba(0,229,204,0.14);box-shadow:inset 0 0 0 2px rgba(0,229,204,0.55);"></a>
+        <a href="/database-reactivation-system" aria-label="Database Reactivation System" style="position:absolute;top:4%;right:4%;width:44%;height:44%;border-radius:16px;display:block;transition:background 0.2s ease,box-shadow 0.2s ease;" style-hover="background:rgba(0,229,204,0.14);box-shadow:inset 0 0 0 2px rgba(0,229,204,0.55);"></a>
+        <a href="/automated-referral-system" aria-label="Automated Referral System" style="position:absolute;bottom:14%;left:4%;width:44%;height:34%;border-radius:16px;display:block;transition:background 0.2s ease,box-shadow 0.2s ease;" style-hover="background:rgba(0,229,204,0.14);box-shadow:inset 0 0 0 2px rgba(0,229,204,0.55);"></a>
+        <a href="/5-star-review-system" aria-label="5-Star Review System" style="position:absolute;bottom:14%;right:4%;width:44%;height:34%;border-radius:16px;display:block;transition:background 0.2s ease,box-shadow 0.2s ease;" style-hover="background:rgba(0,229,204,0.14);box-shadow:inset 0 0 0 2px rgba(0,229,204,0.55);"></a>
+      </div>
+      <p style="color:#9A99B0;font-size:12px;text-align:center;margin:14px 0 0;">Click any engine to see how it works</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#07082E;padding:80px 32px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+      <div style="width:24px;height:1px;background:#00E5CC;"></div>
+      <span style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;">WHO WE SERVE</span>
+    </div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 44px;">BUILT FOR <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">SERVICE BASED</span><br>BUSINESS OWNERS</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+      <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="8">
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <div style="{{ ind.bgStyle }}" style-hover="transform:scale(1.18);"></div>
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">{{ ind.name }}</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">{{ ind.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0D0E4A;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:80px 32px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+      <div style="width:24px;height:1px;background:#00E5CC;"></div>
+      <span style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;">THE PROCESS</span>
+    </div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 48px;">FROM SIGN UP TO <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">BOOKED OUT</span><br>IN 30 DAYS</h2>
+    <div class="om-grid-4" style="">
+      <div>
+        <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">1</div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">BOOK A DISCOVERY CALL</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We map where leads are leaking and which systems will move revenue fastest for your business.</p>
+      </div>
+      <div>
+        <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">2</div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">WE GET IT ALL SET UP FOR YOU</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee, reactivation campaigns, review engine, and referral system — built and tested for you.</p>
+      </div>
+      <div>
+        <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">3</div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">LEADS START FLOWING</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Calls get answered, old leads get revived, reviews start rolling in — and appointments hit your calendar.</p>
+      </div>
+      <div>
+        <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">4</div>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">SCALE AND ASCEND</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We monitor, refine, and expand the systems as your business grows — so momentum keeps compounding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F3F4FA;padding:56px 0 0;">
+  <p style="text-align:center;color:#9A99B0;font-weight:700;font-size:12px;letter-spacing:0.16em;margin:0 0 26px;">TRUSTED BY BUSINESSES LIKE YOURS</p>
+  <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
+    <div style="display:flex;gap:20px;width:max-content;animation:logoMarquee 32s linear infinite;align-items:stretch;">
+      <sc-for list="{{ clientLogos }}" as="logo" hint-placeholder-count="16">
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <div style="{{ logo.style }}"></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F3F4FA;padding:64px 32px 80px;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="display:inline-block;color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:16px;">WHAT CLIENTS SAY</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 16px;color:#12132E;">REAL PEOPLE. <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">REAL RESULTS.</span></h2>
+    <p style="color:#5C5E78;font-size:16px;line-height:1.6;margin:0 0 40px;max-width:560px;">From service businesses across the country — here's what working with Joshua and Ascend CRM actually looks like.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-bottom:40px;align-items:stretch;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"I cannot recommend Josh and Ascend CRM enough. I've had several overly expensive and disappointing experiences with other marketing companies. In just 2 months, Josh turned things around. He listened to our needs, gave us an excellent strategy, got us set up with Meta ads, and we are already seeing results."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">TP</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Traci P.</div><div style="color:#9A99B0;font-size:12px;">Founder — Hope For The Journey</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"Josh's CMO consulting has been the business incubator I didn't know I needed! He streamlined my entire business in a flow that was easy to integrate, and his marketing tools and knowledge were far beyond what I would have envisioned for myself. Thanks to him I feel prepared for anything."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">KM</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Krystal M.</div><div style="color:#9A99B0;font-size:12px;">CEO — LAB Profile Consultant</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"Josh took our Insurance Agency and launched us into the social media universe. He helped us understand what type of content works for our business and has an easy to understand approach — very personable. If you're looking to take your business to the next level, reach out to Josh."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">DR</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">David R.</div><div style="color:#9A99B0;font-size:12px;">CEO — Protection Benefit Solution</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"I would hands down, no questions asked recommend Joshua. I've been a consumer goods entrepreneur for over a decade and worked with countless teams that never delivered. Not only has Joshua delivered on his promises, he has blown me away for the first time in a very long time."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">MM</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Matthew M.</div><div style="color:#9A99B0;font-size:12px;">CEO — Denticheck</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"Josh has a great team and is a great asset to our company. Very knowledgeable in everything they do and conduct business with the utmost honesty and integrity. If you need assistance from CRM development to marketing — I would not look any further."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">JM</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Jeremy M.</div><div style="color:#9A99B0;font-size:12px;">COO — Opulent</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"The BEST company to take your branding from zero to 100% with their proven digital marketing methods for social media and advertising! Worth every dime."</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">MD</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Marilee D.</div><div style="color:#9A99B0;font-size:12px;">Owner — Dose Moving</div></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;display:flex;flex-direction:column;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <div style="color:#1585BF;font-size:14px;margin-bottom:14px;">★★★★★</div>
+        <p style="color:#5C5E78;font-size:14px;line-height:1.65;font-style:italic;margin:0 0 20px;">"Josh is amazing! And I can't recommend him and his CRM enough!"</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:auto;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex:none;">SH</div>
+          <div><div style="font-weight:700;font-size:13px;color:#12132E;">Stephanie H.</div><div style="color:#9A99B0;font-size:12px;">Owner — Max Capacity Agency</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <a href="https://youtu.be/iivyPhc6JUo" target="_blank" style="display:block;aspect-ratio:16/10;position:relative;background-image:url(https://img.youtube.com/vi/iivyPhc6JUo/hqdefault.jpg);background-size:cover;background-position:center;">
+          <div style="position:absolute;inset:0;background:rgba(7,8,46,0.25);display:flex;align-items:center;justify-content:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.25);backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;"><div style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:4px;"></div></div>
+          </div>
+        </a>
+        <div style="padding:16px 20px;">
+          <div style="font-weight:700;font-size:15px;color:#12132E;">Karina</div>
+          <div style="color:#9A99B0;font-size:13px;">CEO — Klean Haven</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <a href="https://youtu.be/SWreieF-nKA" target="_blank" style="display:block;aspect-ratio:16/10;position:relative;background-image:url(https://img.youtube.com/vi/SWreieF-nKA/hqdefault.jpg);background-size:cover;background-position:center;">
+          <div style="position:absolute;inset:0;background:rgba(7,8,46,0.25);display:flex;align-items:center;justify-content:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.25);backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;"><div style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:4px;"></div></div>
+          </div>
+        </a>
+        <div style="padding:16px 20px;">
+          <div style="font-weight:700;font-size:15px;color:#12132E;">Nicole</div>
+          <div style="color:#9A99B0;font-size:13px;">CEO — Posted Digital</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid #E7E9F5;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(18,19,46,0.05);transition:transform 0.25s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.25s ease,border-color 0.25s ease;" style-hover="transform:translateY(-6px);box-shadow:0 16px 36px rgba(18,19,46,0.14);border-color:#00E5CC;">
+        <a href="https://youtu.be/b5eVRcLScuE" target="_blank" style="display:block;aspect-ratio:16/10;position:relative;background-image:url(https://img.youtube.com/vi/b5eVRcLScuE/hqdefault.jpg);background-size:cover;background-position:center;">
+          <div style="position:absolute;inset:0;background:rgba(7,8,46,0.25);display:flex;align-items:center;justify-content:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.25);backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;"><div style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:4px;"></div></div>
+          </div>
+        </a>
+        <div style="padding:16px 20px;">
+          <div style="font-weight:700;font-size:15px;color:#12132E;">Gary</div>
+          <div style="color:#9A99B0;font-size:13px;">CEO — Omni Media</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section style="background:#FAFBFF;padding:80px 32px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+    <div style="flex:1 1 340px;min-width:290px;">
+      <div style="position:relative;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(18,19,46,0.12);">
+        <img src="/assets/joshua-munoz.png" alt="Joshua Munoz — Founder of Ascend CRM" style="width:100%;display:block;">
+      </div>
+    </div>
+    <div style="flex:1 1 420px;min-width:300px;">
+      <div style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:12px;">YOUR HOME SERVICE GROWTH PARTNER</div>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:38px;line-height:1.05;font-weight:800;margin:0 0 10px;color:#12132E;">JOSHUA MUNOZ</h2>
+      <p style="color:#5C5E78;font-size:15px;font-weight:700;margin:0 0 22px;">Founder of Ascend CRM | 10+ Years in Marketing &amp; Growth</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">For more than 10 years, Joshua has helped service-based businesses generate leads, improve their marketing, and build systems that turn more opportunities into revenue. Today, he's bringing that experience directly to the home services industry.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">After years of working in marketing, Joshua saw how often great contractors were losing business — not because they weren't good at what they did, but because their marketing and follow-up systems weren't keeping up with the quality of their work.</p>
+      <p style="color:#12132E;font-size:15px;line-height:1.7;font-weight:700;margin:0 0 14px;">That's why Joshua created Ascend CRM.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">Ascend combines proven marketing strategy, automation, AI, and follow-up systems to help home service businesses get more value from every lead and every customer they already have.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 8px;">Because sometimes the biggest opportunity isn't getting more leads.</p>
+      <p style="color:#12132E;font-size:15px;line-height:1.7;font-weight:700;margin:0 0 24px;">It's making sure you're maximizing the opportunities already in front of you.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.25);">Work With Joshua</a>
+        <a href="/about" style="background:#fff;color:#12132E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;border:1px solid #D8DBEC;">Read His Full Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:80px 32px;text-align:center;">
+  <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:36px;font-weight:800;margin:0 0 16px;">Ready to See What These Systems Could Do for Your Business?</h2>
+  <p style="color:#9A99B0;font-size:16px;line-height:1.6;margin:0 auto 30px;max-width:560px;">A quick strategy call is all it takes to identify the biggest opportunities and map out the exact systems that drive results.</p>
+  <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:16px;padding:17px 32px;border-radius:999px;box-shadow:0 12px 32px rgba(0,229,204,0.32);">Book Your Free Strategy Call</a>
+</section>
+
+<footer style="background:#07082E;color:#aeb8c9;padding:56px 32px 28px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.06);">
+  <div class="om-foot-grid" style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:28px;width:auto;">
+      </div>
+      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for local service businesses — built by Joshua Munoz.</p>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Contact Info</div>
+      <div style="font-size:14px;line-height:2;">support@ascendcrm.io<br>+1 480-565-8544</div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Quick Links</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/" style="color:#aeb8c9;">Home</a>
+        <a href="/about" style="color:#aeb8c9;">About</a>
+        <a href="/services" style="color:#aeb8c9;">Services</a>
+        <a href="/contact" style="color:#aeb8c9;">Contact</a>
+        <a href="/book-strategy-call" style="color:#aeb8c9;">Free Strategy Call</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:14px;">Services</div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+        <a href="/database-reactivation-system" style="color:#aeb8c9;">Database Reactivation System</a>
+        <a href="/5-star-review-system" style="color:#aeb8c9;">5-Star Review System</a>
+        <a href="/ai-employee" style="color:#aeb8c9;">24/7 AI Employee</a>
+        <a href="/automated-referral-system" style="color:#aeb8c9;">Automated Referral System</a>
+        <a href="/meta-ads" style="color:#aeb8c9;">Meta Ads</a>
+        <a href="/full-crm-service" style="color:#aeb8c9;">Full CRM Service</a>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:40px auto 0;border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;font-size:13px;color:#6d7688;">© 2026 Ascend CRM. All rights reserved.</div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { servicesOpen: false, menuOpen: false, openService: 0 };
+
+  toggleService = (i) => this.setState(s => ({ openService: s.openService === i ? -1 : i }));
+  toggleServices = () => this.setState(s => ({ servicesOpen: !s.servicesOpen }));
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+
+  componentDidMount() {
+    this._setupReveal();
+  }
+
+  componentDidUpdate() {
+    this._setupReveal();
+  }
+
+  _setupReveal() {
+    const root = this._revealRoot || document;
+    const sections = Array.from(root.querySelectorAll('section'));
+    const targets = [];
+    sections.forEach(sec => {
+      const scope = sec.querySelector(':scope > div') || sec;
+      Array.from(scope.children).forEach(el => {
+        if (el.hasAttribute('data-reveal') || el.getAttribute('aria-hidden') === 'true') return;
+        if (el.tagName === 'SCRIPT' || el.tagName === 'STYLE') return;
+        const st = el.getAttribute('style') || '';
+        if (st.indexOf('position:absolute') > -1) return;
+        if (st.indexOf('animation:') > -1) return;
+        el.setAttribute('data-reveal', '');
+        el.style.opacity = '0';
+        el.style.willChange = 'opacity, transform';
+        targets.push(el);
+      });
+    });
+    if (!targets.length) return;
+    if (this._io) this._io.disconnect();
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const sibs = Array.from(el.parentElement.children).filter(c => c.hasAttribute('data-reveal'));
+        const delay = Math.min(sibs.indexOf(el), 6) * 90;
+        el.style.animation = `revealUp 0.7s cubic-bezier(0.22,0.61,0.36,1) ${delay}ms forwards`;
+        this._io.unobserve(el);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(t => this._io.observe(t));
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+  }
+  renderVals() {
+    return {
+      servicesOpen: this.state.servicesOpen,
+      toggleServices: this.toggleServices,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      serviceAccordion: [
+        { name: '24/7 AI Employee', accent: '#1E6FD9', href: 'AIEmployee.dc.html', desc: 'Always-on voice and chat agents that answer every call, text, and message instantly — qualifying leads and booking appointments even when you\'re on a job or off the clock.' },
+        { name: 'Database Reactivation System', accent: '#3F8F1F', href: 'RevenueRevival.dc.html', desc: 'Reactivates the dormant leads and past customers already sitting in your database with the right offer at the right time — new bookings with zero ad spend.' },
+        { name: '5-Star Review System', accent: '#C9750A', href: 'ReputationAccelerator.dc.html', desc: 'Turns every completed job into new 5-star reviews automatically, so you outrank competitors on Google and win the customers comparing options.' },
+        { name: 'Automated Referral System', accent: '#6B32BF', href: 'ReferralGrowth.dc.html', desc: 'An automated referral engine that turns your happiest customers into a steady stream of word-of-mouth business — no apps, no portals, no extra work for your team.' },
+      ].map((s, i) => Object.assign({}, s, {
+        open: this.state.openService === i,
+        onToggle: () => this.toggleService(i),
+        iconStyle: 'font-size:20px;font-weight:700;color:' + s.accent + ';flex:none;line-height:1;transition:transform 0.2s ease;transform:rotate(' + (this.state.openService === i ? '45deg' : '0deg') + ');',
+        cardStyle: 'background:#fff;border:1px solid ' + (this.state.openService === i ? s.accent : '#E7E9F5') + ';border-left:4px solid ' + s.accent + ';border-radius:12px;overflow:hidden;transition:border-color 0.2s ease,box-shadow 0.2s ease;box-shadow:' + (this.state.openService === i ? '0 6px 18px rgba(18,19,46,0.08)' : 'none') + ';',
+        dotStyle: 'width:10px;height:10px;border-radius:50%;background:' + s.accent + ';flex:none;',
+        btnStyle: 'display:inline-block;background:' + s.accent + ';color:#fff;font-weight:700;font-size:13px;padding:10px 20px;border-radius:999px;',
+      })),
+      clientLogos: (() => {
+        const files = [
+          '/assets/client-1.png',
+          '/assets/client-2.png',
+          '/assets/client-3.png',
+          '/assets/client-4.png',
+          '/assets/client-5.png',
+          '/assets/client-6.png',
+          '/assets/client-7.png',
+          '/assets/client-8.png',
+        ].map(src => ({
+          src,
+          style: 'width:100%;height:100%;background-image:url(' + src + ');background-size:contain;background-position:center;background-repeat:no-repeat;',
+        }));
+        return [...files, ...files];
+      })(),
+      industries: [
+        { name: 'HVAC', desc: 'Service, install & maintenance', image: '/assets/serve-hvac.png' },
+        { name: 'PLUMBING', desc: 'Residential & commercial', image: '/assets/serve-plumbing.png' },
+        { name: 'ROOFING', desc: 'Repair, replacement & storm damage', image: '/assets/serve-roofing.png' },
+        { name: 'LANDSCAPING', desc: 'Lawn care, design & seasonal', image: '/assets/serve-landscaping.png' },
+        { name: 'CLEANING', desc: 'Residential, commercial & specialty', image: '/assets/serve-cleaning.png' },
+        { name: 'PEST CONTROL', desc: 'Residential & commercial', image: '/assets/serve-pest.png' },
+        { name: 'POOL BUILDERS', desc: 'Design, build & maintenance', image: '/assets/serve-pool.png' },
+        { name: 'ELECTRICAL', desc: 'Residential & commercial', image: '/assets/serve-electrical.png' },
+      ].map(i => Object.assign({}, i, {
+        bgStyle: 'position:absolute;inset:0;background-image:url(' + i.image + ');background-size:cover;background-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);',
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>
