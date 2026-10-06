@@ -7,22 +7,22 @@
 <body>
 <x-dc>
 <helmet>
-<title>CRM & AI Automation for Home Service Businesses | Ascend CRM</title>
+<title>Ascend CRM | Growth Systems for Home Service Businesses</title>
 <link rel="icon" type="image/png" href="/assets/ascend-mark.png">
 <link rel="apple-touch-icon" href="/assets/ascend-mark.png">
-<meta name="description" content="Respond faster, follow up automatically, and convert more of the opportunities you already have. CRM and AI automation for home service businesses.">
+<meta name="description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, reactivate old leads, generate reviews, and turn more opportunities into paying customers.">
 <link rel="canonical" href="https://www.ascendcrm.io/">
 <meta property="og:url" content="https://www.ascendcrm.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascend CRM">
-<meta property="og:title" content="CRM & AI Automation for Home Service Businesses | Ascend CRM">
-<meta property="og:description" content="Respond faster, follow up automatically, and convert more of the opportunities you already have. CRM and AI automation for home service businesses.">
+<meta property="og:title" content="Ascend CRM | Growth Systems for Home Service Businesses">
+<meta property="og:description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, reactivate old leads, generate reviews, and turn more opportunities into paying customers.">
 <meta property="og:image" content="https://www.ascendcrm.io/assets/og-image.png">
 <meta property="og:image:width" content="1680">
 <meta property="og:image:height" content="945">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CRM & AI Automation for Home Service Businesses | Ascend CRM">
-<meta name="twitter:description" content="Respond faster, follow up automatically, and convert more of the opportunities you already have. CRM and AI automation for home service businesses.">
+<meta name="twitter:title" content="Ascend CRM | Growth Systems for Home Service Businesses">
+<meta name="twitter:description" content="Ascend CRM helps home service businesses respond faster, follow up automatically, reactivate old leads, generate reviews, and turn more opportunities into paying customers.">
 <meta name="twitter:image" content="https://www.ascendcrm.io/assets/og-image.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,6 +143,10 @@
     .om-fw-h2 { font-size: 33px !important; }
     .om-fw-cta { display: flex !important; width: 100%; box-sizing: border-box; justify-content: center; }
   }
+  /* om-steps */
+  @media (max-width: 900px) {
+    .om-step { padding: 24px 20px !important; }
+  }
   /* om-nav */
   .om-burger { display:none; }
   @media (max-width: 900px) {
@@ -198,6 +202,7 @@ fbq('track', 'PageView');
         </sc-if>
       </div>
       <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:600;font-size:15px;">Contact</a>
+      <a class="om-login-desk" href="https://login.ascendcrm.io" style="color:#F3F1F2;font-weight:600;font-size:15px;">Login</a>
     </nav>
     <button class="om-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex:none;padding:0;">
       <span style="display:flex;flex-direction:column;gap:4px;width:18px;">
@@ -222,6 +227,7 @@ fbq('track', 'PageView');
       <a href="/meta-ads" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Meta Ads</a>
       <a href="/full-crm-service" style="color:#C8C7DC;font-size:15px;padding:13px 12px 13px 22px;border-radius:10px;">Full CRM Service</a>
       <a href="/book-strategy-call" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;margin-top:8px;">Contact</a>
+      <a href="https://login.ascendcrm.io" style="color:#F3F1F2;font-weight:700;font-size:16px;padding:14px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.18);text-align:center;margin-top:10px;">Login</a>
       <a href="/book-strategy-call" style="margin-top:14px;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:800;font-size:15px;padding:16px 20px;border-radius:12px;text-align:center;box-shadow:0 8px 22px rgba(0,229,204,0.3);">Book Your Free Strategy Call</a>
     </div>
   </sc-if>
@@ -241,7 +247,7 @@ fbq('track', 'PageView');
         <a class="om-desk-only" href="/services" style="background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);color:#F3F1F2;font-weight:700;font-size:16px;padding:16px 28px;border-radius:999px;border:1px solid rgba(255,255,255,0.28);">See How The Systems Work</a>
       </div>
       <a class="om-hero-link om-mob-only" href="#om-how" style="color:#8FFFE6;font-weight:700;font-size:15px;">See how Ascend works ↓</a>
-      <p class="om-desk-only" style="color:#C8C7DC;font-size:14px;line-height:1.7;font-weight:600;margin:0;max-width:520px;"><span style="color:#00E5CC;">★★★★★</span> More calls answered. More leads reactivated. More 5-star reviews.</p>
+      <p class="om-desk-only" style="color:#C8C7DC;font-size:14px;line-height:1.7;font-weight:600;margin:0;max-width:520px;"><span style="color:#00E5CC;">★★★★★</span> More reviews. More calls answered. More customers reactivated — with zero extra staff and without spending on paid ads.</p>
     </div>
   </div>
 </section>
@@ -255,8 +261,9 @@ fbq('track', 'PageView');
   <div style="position:relative;max-width:1100px;margin:0 auto;">
     <div style="max-width:720px;margin:0 0 36px;">
       <div style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:12px;">THE REALITY</div>
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;line-height:1.15;font-weight:800;margin:0 0 12px;">YOUR BUSINESS SHOULDN'T RELY ON MEMORY.<br><span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">IT SHOULD RUN ON SYSTEMS.</span></h2>
-      <p style="color:#C8C7DC;font-size:15px;line-height:1.65;margin:0;">Most home service businesses don't need more leads — they need better systems. Here's the difference once one is actually running.</p>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 20px;">MORE LEADS WON'T FIX A<br><span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">BROKEN FOLLOW-UP SYSTEM.</span></h2>
+      <p style="color:#C8C7DC;font-size:15px;line-height:1.7;margin:0 0 14px;">When calls go unanswered, old leads sit untouched, and happy customers are never asked for reviews or referrals, you're leaving <strong style="color:#F3F1F2;">revenue</strong> on the table. Before spending more money generating new <strong style="color:#F3F1F2;">opportunities</strong>, Ascend helps you make sure the ones you already have aren't falling through the cracks.</p>
+      <p style="color:#8FFFE6;font-size:15px;line-height:1.6;font-weight:700;margin:0;">Fix the leaks first — then pour more opportunities into a system built to convert them.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
       <div>
@@ -374,16 +381,70 @@ fbq('track', 'PageView');
     <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 14px;">BUILT FOR <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">SERVICE BASED</span><br>BUSINESS OWNERS</h2>
     <p style="color:#C8C7DC;font-size:16px;line-height:1.6;margin:0 0 40px;max-width:560px;">Serving home service businesses nationwide.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-      <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="8">
         <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
-          <div style="{{ ind.bgStyle }}" style-hover="transform:scale(1.18);"></div>
+          <img src="/assets/serve-hvac.png" alt="HVAC technician servicing a home heating and cooling system" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
           <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
           <div style="position:relative;pointer-events:none;">
-            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">{{ ind.name }}</h3>
-            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">{{ ind.desc }}</p>
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">HVAC</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Service, install &amp; maintenance</p>
           </div>
         </div>
-      </sc-for>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-plumbing.png" alt="Plumber repairing pipes under a residential sink" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">PLUMBING</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Residential &amp; commercial</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-roofing.png" alt="Roofing contractor installing shingles on a house" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">ROOFING</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Repair, replacement &amp; storm damage</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-landscaping.png" alt="Landscaper maintaining a residential lawn and garden" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">LANDSCAPING</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Lawn care, design &amp; seasonal</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-cleaning.png" alt="Professional cleaner working in a residential home" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">CLEANING</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Residential, commercial &amp; specialty</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-pest.png" alt="Pest control technician treating the exterior of a home" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">PEST CONTROL</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Residential &amp; commercial</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-pool.png" alt="Pool builder finishing a residential swimming pool" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">POOL BUILDERS</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Design, build &amp; maintenance</p>
+          </div>
+        </div>
+        <div style="position:relative;border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;cursor:pointer;transition:border-color 0.35s ease,box-shadow 0.35s ease;" style-hover="border-color:rgba(0,229,204,0.5);box-shadow:0 16px 40px rgba(0,229,204,0.18);">
+          <img src="/assets/serve-electrical.png" alt="Electrician wiring an electrical panel in a home" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);" style-hover="transform:scale(1.18);">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,8,46,0) 0%,rgba(7,8,46,0) 42%,rgba(7,8,46,0.62) 68%,rgba(7,8,46,0.95) 100%);"></div>
+          <div style="position:relative;pointer-events:none;">
+            <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:800;letter-spacing:0.04em;margin:0 0 5px;">ELECTRICAL</h3>
+            <p style="color:#C8C7DC;font-size:13px;line-height:1.5;margin:0;">Residential &amp; commercial</p>
+          </div>
+        </div>
     </div>
   </div>
 </section>
@@ -394,27 +455,31 @@ fbq('track', 'PageView');
       <div style="width:24px;height:1px;background:#00E5CC;"></div>
       <span style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;">THE PROCESS</span>
     </div>
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 48px;">FROM SIGN UP TO <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">BOOKED OUT</span><br>IN 30 DAYS</h2>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;line-height:1.1;font-weight:800;margin:0 0 48px;">FROM STRATEGY CALL TO <span style="background:linear-gradient(90deg,#00E5CC 0%,#2ED3D8 45%,#4A81E5 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">SYSTEMS LIVE</span><br>IN 30 DAYS</h2>
     <div class="om-grid-4" style="">
-      <div>
+      <div class="om-step" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #4A81E5;border-radius:16px;padding:26px 22px;">
+        <div style="color:#8FA6D8;font-weight:800;font-size:11px;letter-spacing:0.16em;margin-bottom:14px;">STEP 01</div>
         <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">1</div>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">BOOK A DISCOVERY CALL</h3>
-        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We map where leads are leaking and which systems will move revenue fastest for your business.</p>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 10px;">IDENTIFY THE LEAKS</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We identify where leads, customers, and revenue opportunities are currently falling through the cracks.</p>
       </div>
-      <div>
+      <div class="om-step" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #00E5CC;border-radius:16px;padding:26px 22px;">
+        <div style="color:#8FA6D8;font-weight:800;font-size:11px;letter-spacing:0.16em;margin-bottom:14px;">STEP 02</div>
         <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">2</div>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">WE GET IT ALL SET UP FOR YOU</h3>
-        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your AI employee, reactivation campaigns, review engine, and referral system — built and tested for you.</p>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 10px;">BUILD YOUR SYSTEMS</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We install the Ascend systems your business needs to improve follow-up, reactivation, reviews, and referrals.</p>
       </div>
-      <div>
+      <div class="om-step" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #3F8F1F;border-radius:16px;padding:26px 22px;">
+        <div style="color:#8FA6D8;font-weight:800;font-size:11px;letter-spacing:0.16em;margin-bottom:14px;">STEP 03</div>
         <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">3</div>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">LEADS START FLOWING</h3>
-        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Calls get answered, old leads get revived, reviews start rolling in — and appointments hit your calendar.</p>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 10px;">GO LIVE</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">Your automations, follow-up systems, and customer communication begin running automatically.</p>
       </div>
-      <div>
+      <div class="om-step" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-top:3px solid #6B32BF;border-radius:16px;padding:26px 22px;">
+        <div style="color:#8FA6D8;font-weight:800;font-size:11px;letter-spacing:0.16em;margin-bottom:14px;">STEP 04</div>
         <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#07082E;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">4</div>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 8px;">SCALE AND ASCEND</h3>
-        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We monitor, refine, and expand the systems as your business grows — so momentum keeps compounding.</p>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:0.03em;margin:0 0 10px;">OPTIMIZE &amp; ASCEND</h3>
+        <p style="color:#9A99B0;font-size:14px;line-height:1.6;margin:0;">We monitor what's working and continue improving the system as your business grows.</p>
       </div>
     </div>
   </div>
@@ -424,11 +489,54 @@ fbq('track', 'PageView');
   <p style="text-align:center;color:#9A99B0;font-weight:700;font-size:12px;letter-spacing:0.16em;margin:0 0 26px;">TRUSTED BY BUSINESSES LIKE YOURS</p>
   <div style="overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
     <div style="display:flex;gap:20px;width:max-content;animation:logoMarquee 32s linear infinite;align-items:stretch;">
-      <sc-for list="{{ clientLogos }}" as="logo" hint-placeholder-count="16">
         <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
-          <div style="{{ logo.style }}"></div>
+          <img src="/assets/client-1.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
         </div>
-      </sc-for>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-2.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-3.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-4.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-5.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-6.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-7.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-8.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-1.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-2.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-3.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-4.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-5.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-6.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-7.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div style="width:120px;height:120px;flex:none;display:flex;align-items:center;justify-content:center;">
+          <img src="/assets/client-8.png" alt="Ascend CRM client logo" style="width:100%;height:100%;object-fit:contain;">
+        </div>
     </div>
   </div>
 </section>
@@ -547,12 +655,9 @@ fbq('track', 'PageView');
       <div style="color:#00E5CC;font-weight:700;font-size:12px;letter-spacing:0.14em;margin-bottom:12px;">YOUR HOME SERVICE GROWTH PARTNER</div>
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:38px;line-height:1.05;font-weight:800;margin:0 0 10px;color:#12132E;">JOSHUA MUNOZ</h2>
       <p style="color:#5C5E78;font-size:15px;font-weight:700;margin:0 0 22px;">Founder of Ascend CRM | 10+ Years in Marketing &amp; Growth</p>
-      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">For more than 10 years, Joshua has helped service-based businesses generate leads, improve their marketing, and build systems that turn more opportunities into revenue. Today, he's bringing that experience directly to the home services industry.</p>
-      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">After years of working in marketing, Joshua saw how often great contractors were losing business — not because they weren't good at what they did, but because their marketing and follow-up systems weren't keeping up with the quality of their work.</p>
-      <p style="color:#12132E;font-size:15px;line-height:1.7;font-weight:700;margin:0 0 14px;">That's why Joshua created Ascend CRM.</p>
-      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">Ascend combines proven marketing strategy, automation, AI, and follow-up systems to help home service businesses get more value from every lead and every customer they already have.</p>
-      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 8px;">Because sometimes the biggest opportunity isn't getting more leads.</p>
-      <p style="color:#12132E;font-size:15px;line-height:1.7;font-weight:700;margin:0 0 24px;">It's making sure you're maximizing the opportunities already in front of you.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">For more than 10 years, Joshua has helped service businesses generate leads, improve their marketing, and build systems that create more revenue.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 14px;">After seeing great contractors repeatedly lose opportunities because their follow-up couldn't keep up with the quality of their work, he built Ascend CRM.</p>
+      <p style="color:#5C5E78;font-size:15px;line-height:1.7;margin:0 0 24px;">Ascend combines strategy, AI, automation, and proven follow-up systems to help home service businesses get more value from every lead and every customer.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
         <a href="/book-strategy-call" style="background:linear-gradient(135deg,#00E5CC,#4A81E5);color:#fff;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;box-shadow:0 10px 26px rgba(0,229,204,0.25);">Work With Joshua</a>
         <a href="/about" style="background:#fff;color:#12132E;font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;border:1px solid #D8DBEC;">Read His Full Story</a>
@@ -573,7 +678,7 @@ fbq('track', 'PageView');
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
         <img src="/assets/ascend-logo.png" alt="Ascend CRM" style="height:28px;width:auto;">
       </div>
-      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for local service businesses — built by Joshua Munoz.</p>
+      <p style="font-size:13px;line-height:1.6;color:#8b95a6;max-width:220px;">Growth systems for home service businesses — built by Joshua Munoz.</p>
       <div style="display:flex;gap:10px;margin-top:18px;">
         <a href="https://www.instagram.com/ascendcrm" target="_blank" rel="noopener" aria-label="Ascend CRM on Instagram" style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;color:#C8C7DC;transition:background 0.2s ease,border-color 0.2s ease,color 0.2s ease;" style-hover="background:rgba(0,229,204,0.12);border-color:rgba(0,229,204,0.5);color:#00E5CC;">
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .5 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.22.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.22-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2z"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
@@ -599,8 +704,7 @@ fbq('track', 'PageView');
         <a href="/" style="color:#aeb8c9;">Home</a>
         <a href="/about" style="color:#aeb8c9;">About</a>
         <a href="/services" style="color:#aeb8c9;">Services</a>
-        <a href="/contact" style="color:#aeb8c9;">Contact</a>
-        <a href="/book-strategy-call" style="color:#aeb8c9;">Free Strategy Call</a>
+        <a href="/book-strategy-call" style="color:#aeb8c9;">Contact</a>
       </div>
     </div>
     <div>
@@ -625,7 +729,6 @@ fbq('track', 'PageView');
 class Component extends DCLogic {
   state = { servicesOpen: false, menuOpen: false, openService: 0 };
 
-  toggleService = (i) => this.setState(s => ({ openService: s.openService === i ? -1 : i }));
   toggleServices = () => this.setState(s => ({ servicesOpen: !s.servicesOpen }));
   toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
 
@@ -679,47 +782,6 @@ class Component extends DCLogic {
       toggleServices: this.toggleServices,
       menuOpen: this.state.menuOpen,
       toggleMenu: this.toggleMenu,
-      serviceAccordion: [
-        { name: '24/7 AI Employee', tagline: 'AI receptionist that answers every call', linkText: 'See how the AI Employee works', accent: '#1E6FD9', href: '/ai-employee', desc: 'Always-on voice and chat agents that answer every call, text, and message instantly — qualifying leads and booking appointments even when you\'re on a job or off the clock.' },
-        { name: 'Database Reactivation', tagline: 'Automatically re-engage your old leads', linkText: 'See how lead reactivation works', accent: '#3F8F1F', href: '/database-reactivation-system', desc: 'Reactivates the dormant leads and past customers already sitting in your database with the right offer at the right time — new bookings with zero ad spend.' },
-        { name: 'Automatic Reviews', tagline: 'Get more Google reviews on autopilot', linkText: 'See the Review System in action', accent: '#C9750A', href: '/5-star-review-system', desc: 'Turns every completed job into new 5-star reviews automatically, so you outrank competitors on Google and win the customers comparing options.' },
-        { name: 'Referral Growth', tagline: 'Turn happy customers into new jobs', linkText: 'See how referrals get automated', accent: '#6B32BF', href: '/automated-referral-system', desc: 'An automated referral engine that turns your happiest customers into a steady stream of word-of-mouth business — no apps, no portals, no extra work for your team.' },
-      ].map((s, i) => Object.assign({}, s, {
-        open: this.state.openService === i,
-        onToggle: () => this.toggleService(i),
-        iconStyle: 'font-size:20px;font-weight:700;color:' + s.accent + ';flex:none;line-height:1;transition:transform 0.2s ease;transform:rotate(' + (this.state.openService === i ? '45deg' : '0deg') + ');',
-        cardStyle: 'background:#fff;border:1px solid ' + (this.state.openService === i ? s.accent : '#E7E9F5') + ';border-left:4px solid ' + s.accent + ';border-radius:12px;overflow:hidden;transition:border-color 0.2s ease,box-shadow 0.2s ease;box-shadow:' + (this.state.openService === i ? '0 6px 18px rgba(18,19,46,0.08)' : 'none') + ';',
-        dotStyle: 'width:10px;height:10px;border-radius:50%;background:' + s.accent + ';flex:none;',
-        btnStyle: 'display:inline-block;background:' + s.accent + ';color:#fff;font-weight:700;font-size:13px;padding:10px 20px;border-radius:999px;',
-      })),
-      clientLogos: (() => {
-        const files = [
-          '/assets/client-1.png',
-          '/assets/client-2.png',
-          '/assets/client-3.png',
-          '/assets/client-4.png',
-          '/assets/client-5.png',
-          '/assets/client-6.png',
-          '/assets/client-7.png',
-          '/assets/client-8.png',
-        ].map(src => ({
-          src,
-          style: 'width:100%;height:100%;background-image:url(' + src + ');background-size:contain;background-position:center;background-repeat:no-repeat;',
-        }));
-        return [...files, ...files];
-      })(),
-      industries: [
-        { name: 'HVAC', desc: 'Service, install & maintenance', image: '/assets/serve-hvac.png' },
-        { name: 'PLUMBING', desc: 'Residential & commercial', image: '/assets/serve-plumbing.png' },
-        { name: 'ROOFING', desc: 'Repair, replacement & storm damage', image: '/assets/serve-roofing.png' },
-        { name: 'LANDSCAPING', desc: 'Lawn care, design & seasonal', image: '/assets/serve-landscaping.png' },
-        { name: 'CLEANING', desc: 'Residential, commercial & specialty', image: '/assets/serve-cleaning.png' },
-        { name: 'PEST CONTROL', desc: 'Residential & commercial', image: '/assets/serve-pest.png' },
-        { name: 'POOL BUILDERS', desc: 'Design, build & maintenance', image: '/assets/serve-pool.png' },
-        { name: 'ELECTRICAL', desc: 'Residential & commercial', image: '/assets/serve-electrical.png' },
-      ].map(i => Object.assign({}, i, {
-        bgStyle: 'position:absolute;inset:0;background-image:url(' + i.image + ');background-size:cover;background-position:center top;transform:scale(1);transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);',
-      })),
     };
   }
 }
