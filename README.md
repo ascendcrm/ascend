@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/33089319/README.md)
 # Ascend CRM — Website
 
 Static marketing site for Ascend CRM. No build step, no dependencies — plain HTML, inline styles, and one small runtime file.
@@ -59,6 +60,15 @@ All canonical URLs, `og:url`, and the sitemap point at **https://www.ascendcrm.i
 - **Repeated lists** (client logos, industries, service accordion) live in the `<script>` block at the bottom of each page.
 - **Header, footer, and mobile menu** markup is duplicated per page. A change to nav or footer needs to be applied to all 11 files.
 - **Images**: drop into `assets/` and reference as `/assets/filename.png`.
+- **Favicon**: `assets/ascend-mark.png`.
+- **Contact email**: `support@ascendcrm.io`.
+
+## Tracking & widgets
+
+Present on every page (in `<head>`):
+
+- **Meta Pixel** — ID `2479741895804719`
+- **LeadConnector chat widget** — widget ID `6aa0445f6818e7d73577d5cc`
 
 ## Third-party embeds
 
